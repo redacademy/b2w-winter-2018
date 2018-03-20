@@ -2,7 +2,7 @@
 /**
  * Custom template tags for this theme.
  *
- * @package RED_Starter_Theme
+ * @package Bridge_2_Work
  */
 
  /**

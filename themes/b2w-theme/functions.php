@@ -1,10 +1,10 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Bridge 2 Work functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package Bridge_2_Work
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :
