@@ -44,10 +44,10 @@ add_action( 'after_setup_theme', 'b2w_setup' );
  *
  * @global int $content_width
  */
-function red_starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
+function b2w_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'b2w_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
+add_action( 'after_setup_theme', 'b2w_content_width', 0 );
 
 /**
  * Register widget area.
@@ -75,7 +75,6 @@ function b2w_widgets_init() {
 		) );
 }
 
-
 add_action( 'widgets_init', 'b2w_widgets_init' );
 
 /**
@@ -94,15 +93,15 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function b2w_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'b2w-style', get_stylesheet_uri() );
 
 	wp_enqueue_style('font-awesome-cdn','https://use.fontawesome.com/releases/v5.0.8/css/all.css', array(),
 	'5.0.8'); 
 	wp_enqueue_style('google-fonts-cdn','https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 	wp_enqueue_script('jquery');
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
-	wp_enqueue_script('b2w-scripts'). get_template_directory_uri() . 'build/js/b2w-scripts.min.js', array('jquery'),'23', true);
+	wp_enqueue_script( 'b2w-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script('b2w-scripts', get_template_directory_uri() . 'build/js/b2w-scripts.min.js', array('jquery'),'23', true);
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
