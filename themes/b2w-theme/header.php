@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Bridge_2_Work
  */
 
 ?><!DOCTYPE html>
