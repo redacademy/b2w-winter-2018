@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the Contact Page.
+ * The template for displaying the FAQ Page.
  *
  * @package Bridge_2_Work
  */
