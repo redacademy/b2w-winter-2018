@@ -130,3 +130,34 @@ a {
 		width: 50%;
 	}
 }
+
+/* Navigation Bar CSS */
+	.site-header {
+		background-color: white;
+		width: 100vw;
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		top: 26px;
+		@include tablet {
+			position: relative;
+		}
+	}
+	.site-description {
+		display: none;
+	}
+	.nav-logo {
+		background: url('../../images/B2W_logo_final.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		color: transparent;
+		height: 100px;
+		width: 150px;
+		 &:hover {
+			color: transparent;
+		 }
+
+	}
