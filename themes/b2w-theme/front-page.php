@@ -17,31 +17,21 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<?php if ( have_posts() ) : ?>
+		<section>
+			<p class="front-page-info-text">We help create economic empowerment and a thriving life for mothers and their children on their journey to financial stability.</p>
+		</section>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-					<?php endif; ?>
-					<h1 class="page-title"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+		<section>
+			<h2>Our Services</h2>
+				<div>
+					<img src="../../images/paid-internship.svg">
+					<img src="../../images/permanant-placement.svg">
+					<img src="../../images/paid-internship.svg">
+				</div>
+		</section>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
 
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

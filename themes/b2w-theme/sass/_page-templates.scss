@@ -10,6 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 25vh;
+  margin-top: 100px; /* remove when nav is fixed */
 
     @include desktop {
       width: 90%;
@@ -28,3 +29,11 @@
       }
   } 
 }
+
+.front-page-info-text {
+  margin: 1.5rem 2.5rem;
+  width: 75%;
+  color: $ultra_violet;
+  text-align: center;
+}
+
