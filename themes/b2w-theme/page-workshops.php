@@ -1,6 +1,9 @@
 <?php
-
-/* Template Name: About Page*/
+/**
+ * The template for displaying the Workshops Page.
+ *
+ * @package Bridge_2_Work
+ */
 
 get_header(); ?>
 
