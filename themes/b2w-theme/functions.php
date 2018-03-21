@@ -102,6 +102,7 @@ function b2w_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'b2w-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script('b2w-scripts', get_template_directory_uri() . 'build/js/b2w-scripts.min.js', array('jquery'),'23', true);
+	wp_enqueue_script( 'flickity-cdn',  'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), false, true  );	
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
