@@ -23,14 +23,21 @@ get_header(); ?>
 
 		<section>
 			<h2>Our Services</h2>
-				<div>
-					<img src="../../images/paid-internship.svg">
-					<img src="../../images/permanant-placement.svg">
-					<img src="../../images/paid-internship.svg">
+				<div class="front-page-services">
+					<div class="front-page-services-text">	
+						<img src="<?php echo get_template_directory_uri() . '/images/paid-internship.svg' ?>">
+							<h2>Paid Internship</h2>
+					</div>
+					<div class="front-page-services-text">
+							<img src="<?php echo get_template_directory_uri() . '/images/temp-placement.svg' ?>">
+							<h2>Temp Placement</h2>
+					</div>
+					<div class="front-page-services-text">
+							<img src="<?php echo get_template_directory_uri() . '/images/permanant-placement.svg' ?>">
+							<h2>Temp to Placement</h2>
+					</div>
 				</div>
 		</section>
-
-
 
 
 		</main><!-- #main -->
