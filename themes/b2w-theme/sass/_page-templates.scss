@@ -3,3 +3,28 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.front-page-hero {
+  background-image: url('../../images/heroimageb2w.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25vh;
+
+    @include desktop {
+      width: 90%;
+      margin: 4.5rem;
+      height: 475px;
+    }
+
+  .hero-text-container {
+    margin: 0 0 0 50px;
+    padding-top: 25px;
+
+    .hero-text {
+      color: white;
+      width: 150px;
+      font-size: 1.25rem;
+      }
+  } 
+}
