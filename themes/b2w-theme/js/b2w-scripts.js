@@ -12,6 +12,7 @@
 
     /* Triggers the burger transformation and menu display*/
     $('#menu-toggle').on('click', function () {
+      console.log('hei');
       $(this).toggleClass('is-active');
       $('.menu-navigation-bar-container').toggleClass('menu-expanded');
     })
