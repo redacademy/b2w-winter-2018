@@ -26,15 +26,15 @@ get_header(); ?>
 				<div class="front-page-services">
 					<div class="front-page-services-text">	
 						<img src="<?php echo get_template_directory_uri() . '/images/paid-internship.svg' ?>">
-							<h5>Paid Internship</h2>
+							<h5>Paid Internship</h5>
 					</div>
 					<div class="front-page-services-text">
 							<img src="<?php echo get_template_directory_uri() . '/images/temp-placement.svg' ?>">
-							<h5>Temp Placement</h2>
+							<h5>Temp Placement</h5>
 					</div>
 					<div class="front-page-services-text">
 							<img src="<?php echo get_template_directory_uri() . '/images/permanant-placement.svg' ?>">
-							<h5>Temp to Placement</h2>
+							<h5>Temp to Placement</h5>
 					</div>
 				</div>
 		</section>
