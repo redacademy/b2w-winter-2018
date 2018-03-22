@@ -2,6 +2,18 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.site-content {
+  padding-top: 100px;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
 /* Front page */
 
 .front-page-hero {
@@ -10,7 +22,6 @@
   background-position: center;
   background-repeat: no-repeat;
   height: auto;
-  margin-top: 100px; /* remove when nav is fixed */
 
     @include desktop {
       width: 90%;
@@ -23,7 +34,7 @@
     padding-top: 25px;
 
     .hero-text {
-      color: white;
+      color: $space_gray;
       width: 150px;
       font-size: 1.25rem;
       }
@@ -52,9 +63,95 @@
 
 .front-page-services-text {
   display: block;
+  width: 75px;
+
+  h5 {
+    font-size: $h5_text_size;
+    text-align: center;
+  }
+}
+
+.fp-container {
+  background-color: $ultra_violet;
+}
+
+.front-page-stats-box {
+  display: flex;
+  text-align: center;
+  color: $space_gray;
+}
+
+.front-page-stats {
 
   h2 {
-    font-size: 1rem;
+    margin: 1.5rem 0 0 0;
+  }
+
+  h3 {
     text-align: center;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    width: 70%;
+    margin: 0 auto;
+    color: $grape;
+    font-weight: 300;
+  }
+}
+
+/* Contact Us Page */
+
+.page {
+
+  article {
+    background: $indigo;
+    padding: 5px 0;
+
+    h1 {
+      display: none;
+    }
+
+    label {
+      color: $space_gray;
+      width: 90%;
+      margin: 0 1rem;
+    }
+
+    input {
+      width: 90%;
+      margin: 0 1rem;
+      border-radius: 0%;
+      background-color: $space_gray;      
+    }
+
+    textarea {
+      height: 100px;
+      width: 90%;
+      margin: 0 1rem;
+      background-color: $space_gray;
+    }
+
+    .map-container {
+
+      body {
+      display: flex;
+      margin-left: 2rem;
+      width: 90%;
+      margin: 0 1rem;
+      }
+    }
+
+    iframe {
+      margin: 1rem;
+    }
+
+  }
+
+  .contact-text-container {
+    width: 90%;
+    margin: auto;
   }
 }
