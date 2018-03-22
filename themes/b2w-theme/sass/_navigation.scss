@@ -132,8 +132,11 @@ a {
 	top: 26px;
 	display: flex;
 	justify-content: center;
+	transition: .5s;
 	@include tablet {
+		// height: 100px;
 		position: relative;
+		justify-content: space-around;
 	}
 	ul {
 		list-style-type: none;
@@ -164,21 +167,20 @@ a {
 	transform: scaleY(0);
 	transition: .5s;
 	transform-origin: top;
-	background-color: rgba($ultra_violet,.7);
-	order: 1;
-	margin-top: 100px;
-	width: 100vw;
+
 	@include tablet {
+		transform: scaleX(1);
 		order: 2;
 		width: 100%;
 		opacity: 1;
 	}
-	@include desktop {
-		display: flex;
-	}
+
 	a {
 		color: $space_gray;
 		text-decoration: none;
+		@include tablet {
+			color: black;
+		}
 
 	}
 	.menu  {
@@ -190,12 +192,18 @@ a {
 		margin: 0;
 		padding: 0;
 		color: $space_gray;
+		@include tablet {
+			color: black;
+			flex-direction: row;
+		}
 		padding-top: 15px;
 		.menu-header {
 			font-weight: bold;
 			border-bottom: 2px solid $space_gray;
 			width: 80%;
-			// margin: 0;
+			@include tablet {
+				display: none;
+			}
 		}
 		li {
 			margin: 5px 0;
@@ -215,9 +223,17 @@ a {
 	opacity: 1;
 	transform: scaleY(1);
 	height: 100vh;
+	background-color: rgba($ultra_violet,.7);
+	order: 1;
+	margin-top: 100px;
+	width: 100vw;
 }
 
 .nav-menu-wrapper {
 	position: absolute;
 	left: 0;
+	@include tablet {
+		position: relative;
+		order: 2;
+	}
 }
