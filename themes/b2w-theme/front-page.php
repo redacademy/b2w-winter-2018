@@ -39,6 +39,17 @@ get_header(); ?>
 				</div>
 		</section>
 
+		<section>
+			<div>
+				<h2>1 in 5</h2>
+				<p>children live in poverty and most them are from single parent home.</p>
+			</div>
+			<div>
+				<h2>32,000</h2>
+				<p>children live in poverty and most them are from single parent home.</p>
+			</div>
+		</section>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
