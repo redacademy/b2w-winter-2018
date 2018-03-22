@@ -31,7 +31,7 @@
 }
 
 .front-page-info-text {
-  margin: 1.5rem 1.5rem;
+  // margin: 1.5rem 1.5rem;
   width: 75%;
   color: $ultra_violet;
   text-align: center;
@@ -42,7 +42,7 @@
   width: 80%;
   margin: 0 1.25rem;
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-between;
 
   img {
     width: 75px;
