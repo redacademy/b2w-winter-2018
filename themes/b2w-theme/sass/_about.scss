@@ -3,6 +3,9 @@
     margin-top: 20px;
     padding: 0 5%;
     transition: .5s;
+    @include tablet {
+      margin-top: 100px;
+    }
     @include desktop {
       margin-top: 50px;
     }
@@ -20,7 +23,8 @@
     align-items: center;
     flex-direction: column;
     @include tablet {
-      flex-direction: row;
+      // flex-direction: row;
+      // flex-wrap: wrap;
     }
     .emp-name {
       margin-top: 15px;
@@ -28,14 +32,27 @@
       font-size: $h4_text_size;
       font-weight: bold;
     }
+
     .emp-photo {
-      display: flex;
-      align-items: center;
-      height: 290px;
-      width: 300px;
+      flex-shrink: 0;
+      position: relative;
+      height: 250px;
+      width: 250px;
       border-radius: 100%;
       overflow: hidden;
+      img {
+        height: auto;
+        max-width: 100%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -40%) scale(1.5);
+        transition: .5s;
+      }
       filter: grayscale(100%);
+      &:hover img {
+        transform: translate(-50%, -40%) scale(1.9);
+      }
     }
   }
 }
