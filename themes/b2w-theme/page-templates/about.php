@@ -7,8 +7,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+
+		<h2> <span class="underline">What</span> <span class="title-norm">We're All About</span></h2>
 			<div class="about-text">
-				<h2> <span class="underline">What</span> <span class="title-norm">We're All About</span></h2>
 				<?php echo CFS()->get( 'about_blurb' );?>
 			</div>
 		
