@@ -20,13 +20,20 @@
     align-items: center;
     flex-direction: column;
     .emp-name {
+      margin-top: 15px;
       text-align: center;
+      font-size: $h4_text_size;
+      font-weight: bold;
     }
     .emp-photo {
-      height: 300px;
+      display: flex;
+      align-items: center;
+      height: 290px;
       width: 300px;
       border-radius: 100%;
-      overflow:hidden;
+      overflow: hidden;
+      filter: grayscale(100%);
     }
   }
 }
+
