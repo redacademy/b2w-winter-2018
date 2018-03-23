@@ -58,23 +58,14 @@ get_header(); ?>
 		<section>
 			<h2>What People Are Saying</h2>
 
-				<?php
-						$fields = CFS()->get( 'testimonial_loop' );
-						foreach ( $fields as $field ) {
-							$authorPhoto = $field['author_photo'];
-							?><img src="<?php echo $authorPhoto?>">
-							<?php
-						}
-					?>
+			<?php
 
-				<?php
-						$fields = CFS()->get( 'testimonial_loop' );
-						foreach ( $fields as $field ) {
-							$authorText = $field['testimonial_text'];
-							?><?php echo $authorText?>
-							<?php
-						}
-					?>
+				$fields = CFS()->get( '	testimonial_loop' );
+				foreach ( $fields as $field ) {
+						echo $field['	author_photo'];
+						echo $field['	testimonial_text'];
+				}
+				?>
 
 		</section>
 
