@@ -19,6 +19,11 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
+h2 {
+	font-family: $font__main;
+	font-weight: 600;
+}
+
 /* Copy */
 
 p {
@@ -39,7 +44,7 @@ address {
 
 pre {
 	background: $color__background-pre;
-	font-family: $font__pre;
+	font-family: $font__main;
 	@include font-size(0.9375);
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6rem;
@@ -49,7 +54,7 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-family: $font__code;
+	font-family: $font__main;
 	@include font-size(0.9375);
 }
 

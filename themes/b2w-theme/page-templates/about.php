@@ -1,9 +1,6 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * @package Bridge_2_Work
- */
+
+/* Template Name: About Page*/
 
 get_header(); ?>
 

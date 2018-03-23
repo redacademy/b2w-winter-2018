@@ -1,17 +1,17 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Bridge 2 Work functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package Bridge_2_Work
  */
 
-if ( ! function_exists( 'red_starter_setup' ) ) :
+if ( ! function_exists( 'b2w_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function red_starter_setup() {
+function b2w_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -37,24 +37,24 @@ function red_starter_setup() {
 
 }
 endif; // red_starter_setup
-add_action( 'after_setup_theme', 'red_starter_setup' );
+add_action( 'after_setup_theme', 'b2w_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * @global int $content_width
  */
-function red_starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
+function b2w_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'b2w_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
+add_action( 'after_setup_theme', 'b2w_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function red_starter_widgets_init() {
+function b2w_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Sidebar' ),
 		'id'            => 'sidebar-1',
@@ -64,8 +64,18 @@ function red_starter_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name' => 'Footer Sidebar',
+		'id' => 'footer-sidebar',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
 }
-add_action( 'widgets_init', 'red_starter_widgets_init' );
+
+add_action( 'widgets_init', 'b2w_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
@@ -82,16 +92,24 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 /**
  * Enqueue scripts and styles.
  */
-function red_starter_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+function b2w_scripts() {
+	wp_enqueue_style( 'b2w-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_style('font-awesome-cdn','https://use.fontawesome.com/releases/v5.0.8/css/all.css', array(),
+	'5.0.8'); 
+	wp_enqueue_style('google-fonts-cdn','https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'b2w-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script('b2w-scripts', get_template_directory_uri() . '/build/js/b2w-scripts.min.js', array('jquery'),'23', true);
+	wp_enqueue_script( 'flickity-cdn',  'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), false, true  );	
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'b2w_scripts' );
 
 /**
  * Custom template tags for this theme.

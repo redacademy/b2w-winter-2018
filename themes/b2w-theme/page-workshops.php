@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying the Workshops Page.
  *
  * @package Bridge_2_Work
  */

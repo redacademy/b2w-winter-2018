@@ -6,7 +6,6 @@
 
 a {
 	color: $color__link;
-
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -25,19 +24,18 @@ a {
 }
 
 /* Menus */
-
+.site-branding {
+	position: absolute;
+}
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
-
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -45,88 +43,226 @@ a {
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
-
 			ul {
 				left: -999rem;
 				top: 0;
 			}
-
 			li {
-				&:hover > ul,
-				&.focus > ul {
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
-
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
+			:hover>a,
+			.focus>a {}
 			a:hover,
-			a.focus {
-			}
+			a.focus {}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
 	li {
 		float: left;
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
+		&:hover>a,
+		&.focus>a {}
 	}
 	a {
 		display: block;
 		text-decoration: none;
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	margin-top: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@include desktop {
 	.menu-toggle {
+		//Removing the burger in desktop
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: flex;
+		li {
+			padding: 10px;
+		}
 	}
 }
 
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
 	.site-main & {
 		margin: 0 0 $base__space-unit;
 		overflow: hidden;
 	}
-
 	.nav-previous {
 		float: left;
 		width: 50%;
 	}
-
 	.nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+.site-description {
+	display: none;
+}
+
+/* Navigation Bar CSS */
+
+.site-header {
+	background-color: white;
+	width: 100vw;
+	height: 100px;
+	position: fixed;
+	top: 26px;
+	display: flex;
+	justify-content: center;
+	transition: .5s;
+	@include tablet {
+		position: relative;
+		justify-content: space-around;
+	}
+	ul {
+		list-style-type: none;
+	}
+	.menu-toggle {
+		position: absolute;
+		@include tablet {
+			display: none;
+		}
+	}
+}
+
+.nav-logo {
+	order: 2;
+	transition: .5s;
+	@include tablet {
+		order: 1;
+	}
+	img {
+		width: 150px;
+		height: 50px;
+		transition: .5s;
+		@include tablet {
+			width: 200px;
+			height: 70px;
+		}
+		@include desktop {
+			width: 300px;
+			height: 100px;
+		}
+	}
+}
+
+/* Burger CSS*/
+
+.menu-navigation-bar-container {
+	opacity: 0;
+	transform: scaleY(0);
+	transition: .5s;
+	transform-origin: top;
+	@include tablet {
+		transform: scaleX(1);
+		order: 2;
+		width: 100%;
+		opacity: 1;
+	}
+	a {
+		color: $space_gray;
+		text-decoration: none;
+		@include tablet {
+			color: black;
+		}
+	}
+	.menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		color: $space_gray;
+		font-size: $h4_text_size;
+		@include tablet {
+			color: black;
+			flex-direction: row;
+		}
+		padding-top: 15px;
+		.menu-header {
+			font-weight: bold;
+			border-bottom: 2px solid $space_gray;
+			width: 80%;
+			@include tablet {
+				display: none;
+			}
+		}
+		li {
+			margin: 10px 0;
+			.sub-menu {
+				margin: 10px 0;
+				padding: 0;
+				@include tablet {
+					position: absolute;
+					transform: scaleY(0);
+					transition: .5s;
+					transform-origin: top;
+					background-color: $lilac;
+					a {
+						color:  $space_gray;
+					}
+				}
+			}
+			@include tablet {
+				margin: 5px;
+				&:hover {
+					.sub-menu {
+						transform: scaleY(1);
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-expanded {
+	opacity: 1;
+	transform: scaleY(1);
+	height: 100vh;
+	background-color: rgba($ultra_violet, .7);
+	order: 1;
+	margin-top: 100px;
+	width: 100vw;
+}
+
+.nav-menu-wrapper {
+	position: absolute;
+	left: 0;
+	@include tablet {
+		position: relative;
+		order: 2;
+		// transition: .5s;
+	}
+	@include desktop {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }

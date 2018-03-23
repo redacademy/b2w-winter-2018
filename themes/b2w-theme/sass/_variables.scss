@@ -1,28 +1,47 @@
 // Structure
 
-$base__space-unit: 1.5rem;
 
-// Colors
+/* Text sizing values */
 
-$color__background-body: #fff;
-$color__text-main: #404040;
+  $h1_text_size: 48px;
+  $h2_text_size: 30px;
+  $h3_text_size: 30px;
+  $h4_text_size: 20px;
+  $h5_text_size: 16px;
+  $main_text_size: 16px;
+  $base__space-unit: 1.5rem;
 
-$color__background-screen: #f1f1f1;
-$color__text-screen: #21759b;
+/* Primary Colours */
+  $lilac: #694F93;
+  $indigo: #0c1452;
+  $ultra_violet: #40225E;
 
-$color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__border-abbr: #666;
+/* Secondary Colorus */
+  $space_gray: #EEEFEC;
+  $gun_metal: #635472;
+  $grape: #A448AD;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+
+// Default Colors
+
+  $color__background-body: #fff;
+  $color__text-main: #404040;
+
+  $color__background-screen: #f1f1f1;
+  $color__text-screen: #21759b;
+
+  $color__background-hr: #ccc;
+  $color__background-pre: #eee;
+  $color__background-ins: #fff9c0;
+  $color__border-abbr: #666;
+
+  $color__link: royalblue;
+  $color__link-visited: purple;
+  $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__main: 'Roboto', sans-serif;
+
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;

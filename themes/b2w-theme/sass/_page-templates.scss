@@ -2,4 +2,185 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.site-content {
+  padding-top: 100px;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
 /* Front page */
+
+.front-page-hero {
+  background-image: url('../../images/heroimageb2w.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+
+    @include desktop {
+      width: 90%;
+      margin: 4.5rem;
+      height: 475px;
+    }
+
+  .hero-text-container {
+    margin: 0 0 0 50px;
+    padding-top: 25px;
+
+    .hero-text {
+      color: $space_gray;
+      width: 150px;
+      font-size: 1.25rem;
+      }
+  } 
+}
+
+.front-page-info-text {
+  width: 75%;
+  margin: 2rem auto;
+  text-align: center;
+  color: $ultra_violet;
+}
+
+.front-page-services {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.front-page-services-text {
+  display: block;
+  width: 75px;
+
+  h5 {
+    font-size: $h5_text_size;
+    text-align: center;
+  }
+}
+
+.fp-container {
+  background-color: $ultra_violet;
+}
+
+.front-page-stats-box {
+  display: flex;
+  text-align: center;
+  color: $space_gray;
+}
+
+.front-page-stats {
+
+  h2 {
+    margin: 1.5rem 0 0 0;
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    width: 70%;
+    margin: 0 auto;
+    color: $grape;
+    font-weight: 300;
+  }
+}
+
+/* Contact Us Page */
+
+.page {
+
+  article {
+    background: $indigo;
+    padding: 5px 0;
+
+    h1 {
+      display: none;
+    }
+
+    label {
+      color: $space_gray;
+      width: 90%;
+      margin: 0 1rem;
+    }
+
+    input {
+      width: 90%;
+      margin: 0 1rem;
+      border-radius: 0%;
+      background-color: $space_gray;      
+    }
+
+    textarea {
+      height: 100px;
+      width: 90%;
+      margin: 0 1rem;
+      background-color: $space_gray;
+    }
+
+    .map-container {
+      body {
+      display: flex;
+      margin-left: 2rem;
+      width: 90%;
+      margin: 0 1rem;
+      }
+    }
+
+    iframe {
+      margin: 1rem;
+    }
+
+  }
+
+  .contact-text-container {
+    width: 90%;
+    padding-bottom: 20px;
+    margin: auto;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .widget-title {
+    margin: 1rem;
+  }
+
+  .office-hours-widget {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+
+  .office-hours-days {
+    font-weight: bold;
+    margin-right: 5rem;
+
+    p {
+      margin: 5px;
+    }
+  }
+  
+  .office-hours-hours {
+    p {
+      margin: 5px;
+    }
+  }
+}
