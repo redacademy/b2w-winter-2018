@@ -151,6 +151,36 @@
 
   .contact-text-container {
     width: 90%;
+    padding-bottom: 20px;
     margin: auto;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .widget-title {
+    margin: 1rem;
+  }
+
+  .office-hours-widget {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+
+  .office-hours-days {
+    font-weight: bold;
+    margin-right: 5rem;
+
+    p {
+      margin: 5px;
+    }
+  }
+  
+  .office-hours-hours {
+    p {
+      margin: 5px;
+    }
   }
 }
