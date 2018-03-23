@@ -21,7 +21,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: auto;
+  height: 30vh;
 
     @include desktop {
       width: 90%;
@@ -41,10 +41,16 @@
   } 
 }
 
+.info-text-container {
+  background: $space_gray;
+}
+
 .front-page-info-text {
   width: 75%;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 25px 0;
   text-align: center;
+  font-weight: 550;
   color: $ultra_violet;
 }
 
@@ -127,6 +133,15 @@
       background-color: $space_gray;      
     }
 
+    .wpcf7-submit {
+      margin-left: 6rem;
+      width: 175px;
+      height: 50px;
+      font-size: $h2_text_size;
+      font-weight: 550;
+      color: $ultra_violet;
+    }
+
     textarea {
       height: 100px;
       width: 90%;
@@ -141,18 +156,39 @@
       width: 90%;
       margin: 0 1rem;
       }
+
+      .map {
+        -webkit-filter: grayscale(100%);
+           -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+             -o-filter: grayscale(100%);
+                filter: grayscale(100%);
+      }
     }
 
     iframe {
       margin: 1rem;
-    }
-
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+       -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+           filter: grayscale(100%);
   }
+}
 
   .contact-text-container {
     width: 90%;
     padding-bottom: 20px;
     margin: auto;
+
+    .address-container {
+      line-height: 0;
+    }
+
+    .phone-number-container {
+      display: flex;
+      line-height: 0;
+    }
 
     img {
       width: 100px;
