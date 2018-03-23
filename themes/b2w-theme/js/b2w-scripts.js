@@ -14,7 +14,7 @@
     $('#menu-toggle').on('click', function () {
       console.log('hei');
       $(this).toggleClass('is-active');
-      $('.menu-navigation-bar-container').toggleClass('menu-expanded');
+      $('.nav-menu').toggleClass('menu-expanded');
     });
 
 
