@@ -14,5 +14,7 @@
     $('.faq-answer').hide();
   })
 
+
+
   });
 })(jQuery);
