@@ -22,30 +22,55 @@
 .faq-question{
   margin: 0;
   padding: 10px 20px;
+  display: block;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
   &:hover{
     cursor: pointer;
+    background: $ultra_violet;
+    color: white;
   }
 }
 
 .faq-answer{
   display: none;
+  padding: 20px 50px;
 }
 
-.faq-plus, .faq-minus{
+.faq-plus{
   position: absolute;
-  right: 5%;
+  right: 3%;
   top: 0;
   bottom: 0;
   display: flex;
   align-items: center;
   font-weight: bold;
-  color: $indigo;
+  color: inherit;
+  padding: 10px;
   &:hover{
     cursor: pointer;
   }
 }
 
 .faq-minus{
-  display: none;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  bottom: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: $indigo;
+  padding: 10px;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
+.faq-question.active{
+  background:$indigo;
+  color: white;
+  }
