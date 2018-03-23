@@ -7,11 +7,24 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
+			<div class="about-text">
+				<h2> <span class="underline">What</span> <span class="title-norm">We're All About</span></h2>
+				<?php echo CFS()->get( 'about_blurb' );?>
+			</div>
+		
+			<h2> <span class="underline">Who</span> <span class="title-norm">We Are</span></h2>
+			<div class="employee-wrapper">
+				<?php
+					$fields = CFS()->get( 'employee' );
+						foreach ( $fields as $field ) {
+							?><div class="emp-photo">
+							<img src="<?php echo $field['employee_picture'] ?>">
+						</div>
+					<p class="emp-name"><?php	echo $field['employee_name']?></p> <?php
+						}	
+					?>
+				
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
