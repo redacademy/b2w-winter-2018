@@ -16,18 +16,22 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-			<button id="test">click me!</button>
-
 			<section class="faq">
 				<?php
 				$fields = CFS()->get( 'frequently_asked_questions' );
-				foreach ( $fields as $field ) {?>
-					<article class="faq-set">
-						<h4 class="faq-question"><?php echo $field['faq_question'];?> </h4>
-						<span class="faq-plus">+</span>
-						<span class="faq-minus">-</span>
-						<div class="faq-answer"><?php echo $field['faq_answer']; ?> </div>
-					</article>
+				
+				foreach ( $fields as $key=>$field ) {
+					$faqQuestion = $field['faq_question'];
+					$faqAnswer = $field['faq_answer'];?>
+
+					<div class="faq-set">
+						<a class="faq-question" href="#question-<?php echo $key ?>"><?php echo $faqQuestion ?><span class="faq-plus">+</span></a>
+
+						<article id="question-<?php echo $key ?>" class="faq-answer">
+							<?php echo $faqAnswer ?>
+							<span class="faq-minus">-</span>
+						</article><!--end .faq-answer -->
+					</div><!--end .faq-question -->
 				<?php
 				}
 				?>
