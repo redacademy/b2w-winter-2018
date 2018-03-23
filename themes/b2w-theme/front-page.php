@@ -22,7 +22,7 @@ get_header(); ?>
 		</section>
 
 		<section>
-			<h2>Our Services</h2>
+			<h2 class="h2-title-text">Our Services</h2>
 				<div class="front-page-services">
 					<div class="front-page-services-text">	
 						<img src="<?php echo get_template_directory_uri() . '/images/paid-internship.svg' ?>">
@@ -56,10 +56,11 @@ get_header(); ?>
 		</section>
 
 		<section>
-			<h2>What People Are Saying</h2>
+			<h2 class="h2-title-text">What People Are Saying</h2>
 
 				<?php
-						$fields = CFS()->get( 'testimonial_loop' );
+
+					$fields = CFS()->get( 'testimonial_loop' );
 						foreach ( $fields as $field ) {
 							$authorPhoto = $field['author_photo'];
 							?><img src="<?php echo $authorPhoto?>">
@@ -71,8 +72,9 @@ get_header(); ?>
 						$fields = CFS()->get( 'testimonial_loop' );
 						foreach ( $fields as $field ) {
 							$authorText = $field['testimonial_text'];
-							?><?php echo $authorText?>
-							<?php
+						
+							echo $authorText;
+						
 						}
 					?>
 
