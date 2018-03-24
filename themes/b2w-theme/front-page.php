@@ -58,7 +58,14 @@ get_header(); ?>
 		<section>
 			<h2 class="h2-title-text">What People Are Saying</h2>
 
+			<?php
 
+				$fields = CFS()->get( '	testimonial_loop' );
+				foreach ( $fields as $field ) {
+						echo $field['	author_photo'];
+						echo $field['	testimonial_text'];
+				}
+				?>
 
 		</section>
 
