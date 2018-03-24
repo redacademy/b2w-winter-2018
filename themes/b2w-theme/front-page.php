@@ -59,11 +59,15 @@ get_header(); ?>
 			<h2 class="h2-title-text">What People Are Saying</h2>
 
 			<?php
-
-				$fields = CFS()->get( '	testimonial_loop' );
+				$fields = CFS()->get( 'testimonial_loop' );
 				foreach ( $fields as $field ) {
-						echo $field['	author_photo'];
-						echo $field['	testimonial_text'];
+					$photo = $field['author_photo'];
+					$quote = $field['testimonial_text'];?>
+
+					<img src="<?php echo $photo ?>" alt=""/>
+					<p><?php echo $quote ?></p>
+					
+					<?php
 				}
 				?>
 
