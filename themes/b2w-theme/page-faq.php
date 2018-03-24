@@ -17,7 +17,7 @@ get_header(); ?>
 					<?php $backgroundImg = get_the_post_thumbnail_url(  ); ?>
 				<?php endif; ?>	
 
-				<header class="entry-header" style=" background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo $backgroundImg ?>'); background-size: cover;">
+				<header class="entry-header" style=" background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php echo $backgroundImg ?>'); background-size: cover;">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 
