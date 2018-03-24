@@ -54,7 +54,7 @@ get_header(); ?>
 			
 			<div class="faq-contact">
 				<p>Have a question you can't find?</p>
-				<a href="" class="btn">Learn How</a>
+				<a href="" class="btn">Contact Us</a>
 			</div>
 
 		</main><!-- #main -->
