@@ -42,6 +42,14 @@
   } 
 }
 
+.underline {
+  border-bottom: 5px solid $lilac;
+  padding-right: 15px;
+}
+.title-norm {
+  margin-left: -15px;
+}
+
 .info-text-container {
   background: $space_gray;
 }
@@ -143,6 +151,26 @@
     font-size: $h4_text_size;
     width: 200px;
     padding: 1rem;
+  }
+}
+
+/* Services Page */
+
+.page-id-19 {
+  .site-main{
+    width: 90%;
+    margin: auto;
+
+    h2 {
+      margin: 0;
+      font-size: $h4_text_size;
+    }
+
+    p {
+      margin-top: 0;
+      font-size: $h5_text_size *1.2;
+      font-weight: 200;
+    }
   }
 }
 
