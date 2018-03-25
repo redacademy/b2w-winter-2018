@@ -20,7 +20,7 @@
 
     /* Mobile Menu Header*/
 
-    $('.menu').prepend('<p class="menu-header">' + 'Menu' +  '</p>' );
+    $('.menu').prepend('<p class="menu-header">' + 'Menu' + '</p>');
   });
 
   /* Number Scroll */
@@ -45,13 +45,13 @@
 // }
 // animateValue("value", 1, 32000, 100);
 
-function doSetTimeout(i) {
+function numberCounter(num) {
   setTimeout(function () {
-    $('#value').text(i)
+    $('#value').text(num)
   }, 100);
 }
 
-for (var i = 1; i < 32001; i++)
-  doSetTimeout(i);
-
+for (var num = 1; num < 32001; num++){
+  numberCounter(num);
+}
 })(jQuery);

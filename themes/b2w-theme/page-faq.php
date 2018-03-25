@@ -12,7 +12,22 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<?php if ( has_post_thumbnail() ) : ?>
+					<?php $backgroundImg = get_the_post_thumbnail_url(  ); ?>
+				<?php endif; ?>	
+
+				<header class="entry-header" style=" background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php echo $backgroundImg ?>'); background-size: cover;">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</header><!-- .entry-header -->
+
+				<?php get_search_form(); ?>
+
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div><!-- .entry-content -->
+			</article><!-- #post-## -->
+				
 
 			<?php endwhile; // End of the loop. ?>
 
@@ -37,9 +52,12 @@ get_header(); ?>
 				?>
 			</section>
 			
+			<div class="faq-contact">
+				<p>Have a question you can't find?</p>
+				<a href="" class="btn">Contact Us</a>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

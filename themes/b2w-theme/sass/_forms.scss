@@ -4,62 +4,108 @@
 
 /* Buttons */
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6rem 1rem .4rem;
-}
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		border: 1px solid;
+		border-color: #ccc #ccc #bbb;
+		border-radius: 3px;
+		background: #e6e6e6;
+		color: rgba(0, 0, 0, .8);
+		@include font-size(0.75);
+		line-height: 1;
+		padding: .6rem 1rem .4rem;
+	}
+
+	.btn,
+	input[type="url"]{
+		display: block;
+		width: 100%;
+		max-width: 100px;
+		text-align: center;
+		color: white;
+		padding: 10px;
+		text-decoration: none;
+		border: none;
+		background: $ultra_violet;
+		&:visited{
+			color: white;
+		}
+	}
+
+/* Search Bar */
+	.search-form{
+		border: none;
+		width: 100%;
+		max-width: 400px;
+		margin: 20px auto;
+		fieldset{
+			border: none;
+			margin: 0 auto;
+			width: 300px;
+			position: relative;
+		}
+		label{
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		input[type="search"]{
+			background: $space_gray;
+			border-style: none;
+			width: 100%;
+			padding: 5px;
+			&:focus{
+				outline: none;
+			}
+			&::placeholder{
+				font-weight: 500;
+				text-align: center;
+				color: $grape;
+
+			}
+		}
+		.search-submit{
+			position: absolute;
+			background: none;
+			border: none;
+			padding: none;
+			top: 15%;
+			right: 0;
+			color: $grape;
+		}
+		@include desktop{
+
+		}
+	}
 
 /* Fields */
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	textarea {
+		color: #666;
+		border: 1px solid #ccc;
+		border-radius: 3px;
 
-	&:focus {
-		color: #111;
+		&:focus {
+			color: #111;
+		}
 	}
-}
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 3px;
-}
-
-textarea {
-	padding-left: 3px;
-	width: 100%;
-}
-
-.btn,
-input[type="url"]{
-	display: block;
-	width: 100%;
-	max-width: 100px;
-	text-align: center;
-	color: white;
-	padding: 10px;
-	text-decoration: none;
-	border: none;
-	background: $ultra_violet;
-	&:visited{
-		color: white;
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],{
+		padding: 3px;
 	}
-}
+
+	textarea {
+		padding-left: 3px;
+		width: 100%;
+	}
+

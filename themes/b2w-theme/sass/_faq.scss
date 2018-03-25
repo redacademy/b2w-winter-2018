@@ -2,75 +2,136 @@
 # FAQ Page
 --------------------------------------------------------------*/
 
+//General Page layout and styling
+  .page-id-15{
+    .entry-header{
+      width: 100%;
+      height: 30vh;
+      display: flex;
+      align-items: flex-end;
+      @include desktop{
+        height: 350px; 
+        align-items: center;
+      }
+    }
+    .entry-title{
+      font-size: 1rem;
+      font-weight: normal;
+      color: white;
+      margin: 0 20px;
+      margin-bottom: 20px;
+      position: relative;
+      @include desktop{
+        margin-bottom: 40px;
+        font-size: 2rem;
+      }
+      &::after{
+        content: "";
+        height: 3px;
+        width: 22%;
+        position: absolute;
+        background: $grape;
+        bottom: 0;
+        left: 0;
+
+      }
+    }
+  }
+
 //Dropdown styling
-.faq{
-  padding: 0 50px;
-  max-width: 900px;
-}
-
-.faq-set{
-  border: 1px solid black;
-  position: relative;
-  background: none;
-  margin: 20px 0;
-  &:active, &:focus{
-    border: 2px solid $indigo;
-    outline: none;
+  .faq{
+    padding: 0 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    @include desktop{
+      padding: 0 50px;
+    }
   }
-}
 
-.faq-question{
-  margin: 0;
-  padding: 10px 20px;
-  display: block;
-  width: 100%;
-  position: relative;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  &:hover{
-    cursor: pointer;
-    background: $ultra_violet;
+  .faq-set{
+    border: 1px solid black;
+    position: relative;
+    background: none;
+    margin: 20px 0;
+    &:active, &:focus{
+      border: 2px solid $indigo;
+      outline: none;
+    }
+  }
+
+  .faq-question{
+    margin: 0;
+    padding: 20px 20px;
+    display: block;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    &:hover{
+      cursor: pointer;
+      background: $ultra_violet;
+      color: white;
+    }
+  }
+
+  .faq-answer{
+    display: none;
+    padding: 20px 50px;
+    ul{
+      margin: 0;
+      padding-left: 20px;
+      @include desktop{
+        padding-left: 40px;
+      }
+    }
+  }
+
+  .faq-plus{
+    position: absolute;
+    right: 3%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: inherit;
+    padding: 10px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .faq-minus{
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    bottom: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: $indigo;
+    padding: 10px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .faq-question.active{
+    background:$indigo;
     color: white;
-  }
-}
+    }
 
-.faq-answer{
-  display: none;
-  padding: 20px 50px;
-}
-
-.faq-plus{
-  position: absolute;
-  right: 3%;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  color: inherit;
-  padding: 10px;
-  &:hover{
-    cursor: pointer;
-  }
-}
-
-.faq-minus{
-  position: absolute;
-  right: 3%;
-  top: 50%;
-  bottom: 50%;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  color: $indigo;
-  padding: 10px;
-  &:hover{
-    cursor: pointer;
-  }
-}
-
-.faq-question.active{
-  background:$indigo;
-  color: white;
+//Contact Us Styling
+  .faq-contact{
+    margin: 40px auto;
+    max-width: 300px;
+    p{
+      text-align: center;
+      font-weight: bold;
+    }
+    .btn{
+      margin: 0 auto;
+    }
   }
