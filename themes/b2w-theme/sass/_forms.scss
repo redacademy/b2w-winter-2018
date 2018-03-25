@@ -4,22 +4,7 @@
 
 /* Buttons */
 
-	button,
-	input[type="button"],
-	input[type="reset"],
-	input[type="submit"] {
-		border: 1px solid;
-		border-color: #ccc #ccc #bbb;
-		border-radius: 3px;
-		background: #e6e6e6;
-		color: rgba(0, 0, 0, .8);
-		@include font-size(0.75);
-		line-height: 1;
-		padding: .6rem 1rem .4rem;
-	}
-
-	.btn,
-	input[type="url"]{
+	.btn, .btn-solid{
 		display: block;
 		width: 100%;
 		max-width: 100px;
@@ -29,8 +14,50 @@
 		text-decoration: none;
 		border: none;
 		background: $ultra_violet;
+		&:hover{
+			background: $lilac;
+		}
 		&:visited{
 			color: white;
+		}
+	}
+
+	.btn-border{
+		display: block;
+		width: 100%;
+		max-width: 100px;
+		text-align: center;
+		color: $ultra_violet;
+		padding: 10px;
+		text-decoration: none;
+		border: 2px solid $ultra_violet;
+		background: white;
+		&:hover{
+			background: $ultra_violet;
+			color: white;
+		}
+		&:visited{
+			color: $ultra_violet;
+		}
+	}
+
+	.btn-plain{
+		display: block;
+		width: 100%;
+		max-width: 100px;
+		text-align: center;
+		color: $grape;
+		padding: 10px;
+		text-decoration: none;
+		border: none;
+		background: white;
+		box-shadow: 0 2px 10px  darkgray;
+		&:hover{
+			background: $grape;
+			color: white;
+		}
+		&:visited{
+			color: $ultra_violet;
 		}
 	}
 

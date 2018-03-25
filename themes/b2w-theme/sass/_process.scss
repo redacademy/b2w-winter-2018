@@ -1,0 +1,49 @@
+.page-id-17{
+  h1{
+    margin: 1.5rem 20px;
+  }
+  p{
+    padding: 0 20px;
+  }
+  .candidate-requirements{
+    img{
+      margin: 0 auto;
+      margin-bottom: -7px;
+      padding: 0 20px;
+      z-index: -1;
+    }
+    ol{
+      background: $ultra-violet;
+      color: white;
+      margin: 0;
+      padding: 20px;
+      counter-reset: item;
+    }
+    li{
+      display: block;
+      // list-style: inside none;
+      // list-style-type: decimal-leading-zero;
+      margin: 20px 0;
+      &::before {
+        content: "0" counter(item) ". "; 
+        counter-increment: item; 
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .workshops-promo{
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    a{
+      @extend .btn-border;
+      max-width: none;
+      font-weight: bolder;
+      font-size: 1.3rem;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
