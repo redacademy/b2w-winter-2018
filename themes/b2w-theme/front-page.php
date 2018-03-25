@@ -13,7 +13,7 @@ get_header(); ?>
 		<section class="front-page-hero">
 			<div class="hero-text-container">
 				<h1 class="hero-text">Be The Difference.</h1>
-				<button class="btn">Learn How</button>
+				<a href="services/" class="btn">Learn How</a>
 			</div>
 		</section>
 
@@ -70,7 +70,10 @@ get_header(); ?>
 							<?php
 						}
 					?>
-		</section>
+			<div class="testimonial-button">		
+				<a href="services/" class="btn">Learn How</a>
+			</div>
+			</section>
 
 
 		</main><!-- #main -->

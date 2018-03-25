@@ -129,6 +129,22 @@
   }
 }
 
+.testimonial-button {
+  display: flex;
+  align-content: center;
+
+  .btn {
+    width: 1000px;
+  }
+
+  a {
+    margin: auto;
+    font-size: $h4_text_size;
+    width: 200px;
+    padding: 1rem;
+  }
+}
+
 /* Contact Us Page */
 
 .page-id-13 {
