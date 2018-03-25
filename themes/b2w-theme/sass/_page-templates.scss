@@ -113,6 +113,22 @@
   width: 50px;
 }
 
+.front-page-testimonials {
+  display: flex;
+  background-color: $indigo;
+  color: $space_gray;
+  justify-content: space-around;
+  margin: 2rem;
+  padding: 1rem;
+
+  img {
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    margin: 1rem 1rem;
+  }
+}
+
 /* Contact Us Page */
 
 .page-id-13 {
