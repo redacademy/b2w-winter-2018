@@ -37,6 +37,7 @@
       color: $space_gray;
       width: 150px;
       font-size: 1.25rem;
+      border: 0;
       }
   } 
 }
@@ -110,7 +111,7 @@
 
 .h2-title-text {
   border-bottom: 5px solid #694f93;
-  width: 50px;
+  width: auto;
 }
 
 .front-page-testimonials {
