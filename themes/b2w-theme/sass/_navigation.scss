@@ -24,9 +24,11 @@ a {
 }
 
 /* Menus */
+
 .site-branding {
 	position: absolute;
 }
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -124,6 +126,18 @@ a {
 	display: none;
 }
 
+.logged-in {
+	#wpadminbar {
+		position: fixed;
+	}
+	.site-header {
+		top: 46px;
+		@include desktop {
+			top: 26px;
+		}
+	}
+}
+
 /* Navigation Bar CSS */
 
 .site-header {
@@ -132,9 +146,9 @@ a {
 	width: 100%;
 	height: 100px;
 	position: fixed;
-	top: 26px;
 	display: flex;
 	justify-content: center;
+	top: 0;
 	transition: .5s;
 	@include desktop {
 		position: relative;
@@ -228,7 +242,7 @@ a {
 					transform-origin: top;
 					background-color: $lilac;
 					a {
-						color:  $space_gray;
+						color: $space_gray;
 					}
 				}
 			}
@@ -259,8 +273,7 @@ a {
 	left: 0;
 	@include desktop {
 		position: relative;
-		order: 2;
-		// transition: .5s;
+		order: 2; // transition: .5s;
 	}
 	@include desktop {
 		display: flex;

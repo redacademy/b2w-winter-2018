@@ -1,23 +1,113 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 .site-footer {
   width: 100%;
-  height: 300px;
   background-color: $footer_color;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   color: $space_gray;
-  .footer-logo {
-    width: 60%;
-    filter: brightness(0) invert(1);
+  padding: 0 15px;
+  
+  .footer-logo-widget-wrapper { 
     @include tablet {
-      width: 20%;
+      display: flex;
+      justify-content: space-around;
     }
+
   }
-  .contact-us-widget-class {
-    width: 30%;
+    /* Footer logo */
+      .footer-logo {
+        margin-top: 20px;
+        width: 50%;
+        filter: brightness(0) invert(1);
+        @include tablet {
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        @include desktop {
+          width: 15%;
+        }
+      }
+    /* Footer Widget Container */
+      .widget-container {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        @include desktop {
+          margin-top: 50px;
+        }
+      /* Contact Us widget */ 
+        .contact-us-widget-class {
+          .widget-title {
+            font-size: $main_text_size;
+            margin: 20px 0 5px 0;
+            @include desktop {
+              margin: 20px 0;
+            }
+          }
+          p {
+            margin: 5px 0;
+          }
+          .location-text {
+            width: 171px;
+            @include desktop {
+              margin: 20px 0;
+            }
+          }
+        }
+      /* Footer Menu Widget */ 
+        .widget_nav_menu {
+          display: none;
+          .widget-title {
+            font-size: $main_text_size;
+            margin: 20px 0 5px 0;
+          }
+          .menu-header {
+            display: none;
+          }
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            a {
+              text-decoration: none;
+              color: $space_gray;
+              &:hover {
+                color: $space_gray;
+              }
+              &:visited {
+                color: $space_gray;
+              }
+            }
+          }
+          @include desktop {
+            display: block;
+          }
+        }
+      /* Social Links Widget */
+        .social-links-widget-class {
+          .widget-title {
+            font-size: $main_text_size;
+            margin: 20px 0 5px 0;
+            width: 70px;
+          }
+          p {
+            margin: 5px 0;
+            a {
+              text-decoration: none;
+              color: $space_gray;
+              &:hover {
+                color: $space_gray;
+              }
+              &:visited {
+                color: $space_gray;
+              }
+            }
+          }
+        }
   }
 }
