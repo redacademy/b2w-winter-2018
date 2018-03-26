@@ -1,4 +1,4 @@
-# RED Starter
+# B2W Starter
 
 A WordPress starter theme for RED Academy students, forked from Underscores.
 
