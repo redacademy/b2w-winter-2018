@@ -262,7 +262,10 @@ a {
 		}
 	}
 	.menu-item-35 {
-		background:  $ultra_violet;
+		@include desktop {
+			background:  $ultra_violet;
+		}
+
 		a {
 			color: $space_gray;
 		}
@@ -282,6 +285,8 @@ a {
 .nav-menu-wrapper {
 	position: absolute;
 	left: 0;
+	height: 0px;
+	width: 0px;
 	@include desktop {
 		position: relative;
 		order: 2; // transition: .5s;

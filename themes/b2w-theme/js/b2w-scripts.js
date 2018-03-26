@@ -17,11 +17,8 @@
 
 
     /* Mobile Menu Header*/
-
      $('.menu').prepend('<p class="menu-header">' + 'Menu' + '</p>');
-
-    /* Number Scroll */
-    
+    /* Number Scroll */  
       $(window).scroll(function () {
         var top  = window.pageYOffset || document.documentElement.scrollTop;
         if (top > 450 && top < 475) {
@@ -39,5 +36,50 @@
             }
         }
       });
+
+    /* About us Employee Text */
+      $('.emp-button-0').on('click', function (){
+        $('.photo-0').css('filter', 'grayscale(0)')
+        $('.photo-1').css('filter', 'grayscale(100)')
+        $('.photo-2').css('filter', 'grayscale(100)')
+        $('.employee-1').css('display','block');
+        $('.employee-2').css('display', 'none');
+        $('.employee-3').css('display', 'none');
+      })
+
+      $('.emp-button-1').on('click', function (){
+        $('.photo-0').css('filter', 'grayscale(100)')
+        $('.photo-1').css('filter', 'grayscale(0)') 
+        $('.photo-2').css('filter', 'grayscale(100)')
+        $('.employee-1').css('display','none');
+        $('.employee-2').css('display','block');
+        $('.employee-3').css('display','none');
+      })
+
+      $('.emp-button-2').on('click', function (){
+        $('.photo-0').css('filter', 'grayscale(100)')
+        $('.photo-1').css('filter', 'grayscale(100)')    
+        $('.photo-2').css('filter', 'grayscale(0)')
+        $('.employee-1').css('display','none');
+        $('.employee-2').css('display','none');
+        $('.employee-3').css('display','block');
+      })
+
+    /* Employee Text X button */
+
+      $('.employee-1').prepend('<div><button id="close-button">' + 'X' + '</button></div>' );
+      $('.employee-2').prepend('<div><button id="close-button">' + 'X' + '</button></div>' );
+      $('.employee-3').prepend('<div><button id="close-button">' + 'X' + '</button></div>' );
+
+      $('#close-button').on('click', function () {
+        console.log('Clicked the X');
+        $('.photo-0').css('filter', 'grayscale(100)');
+        $('.photo-1').css('filter', 'grayscale(100)');
+        $('.photo-2').css('filter', 'grayscale(100)');
+        $('.employee-1').css('display','none');
+        $('.employee-2').css('display','none');
+        $('.employee-3').css('display','none');
+      })
+
   });
 })(jQuery);
