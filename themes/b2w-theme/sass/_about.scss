@@ -1,7 +1,8 @@
 .page-template-about {
+  margin: 0;
   .content-area {
     margin-top: 20px;
-    padding: 0 5%;
+    // padding: 0 5%;
     transition: .5s;
     @include tablet {
       margin-top: 100px;
@@ -43,6 +44,7 @@
   }
   .who-we-are-wrapper {
     background-color: $space_gray;
+    width: 100vw;
   }
   .employee-wrapper {
     display: flex;
