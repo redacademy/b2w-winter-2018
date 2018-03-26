@@ -27,5 +27,15 @@
 
     $('.faq-minus').on('click', closeAccordionSection);
 
+  //Contact Form Thank You Pop Up
+  $('.wpcf7-submit').on('click', function(){
+    setTimeout(function(){
+      if($('.wpcf7-mail-sent-ok').is(':visible')){
+        $('.wpcf7-mail-sent-ok').empty().append('<div class="thank-you-container"><p>We appreciate your time. We will get back to you as soon as possible.</p><a href="" id="thank-you-close-btn" class="btn-plain thank-you-btn">Okay</a></div>');
+      }
+    }, 500);
+
+    
+  });
   });
 })(jQuery);
