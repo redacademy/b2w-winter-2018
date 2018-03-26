@@ -13,6 +13,7 @@ get_header(); ?>
 				<?php echo CFS()->get( 'about_blurb' );?>
 			</div>
 		
+		<section class="who-we-are-wrapper">
 			<h2> <span class="underline">Who</span> <span class="title-norm">We Are</span></h2>
 			<div class="employee-wrapper">
 				<?php
@@ -27,8 +28,8 @@ get_header(); ?>
 						<?php
 						}	
 					?>
-				
 			</div>
+		</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
