@@ -1,0 +1,41 @@
+//Styling for generic page ----> Make sure to add it to the page-templates.scss file
+
+.entry-header{
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: flex-end;
+  @include desktop{
+    height: 350px; 
+    align-items: center;
+  }
+}
+.entry-title{
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  position: relative;
+  @include desktop{
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+  &::after{
+    content: "";
+    height: 3px;
+    width: 22%;
+    position: absolute;
+    background: $grape;
+    bottom: 0;
+    left: 0;
+
+  }
+}
+
+.entry-content{
+  padding: 0 20px;
+  @include tablet{
+    padding: 0 50px;
+  }
+}
