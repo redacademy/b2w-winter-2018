@@ -1,0 +1,112 @@
+//General Styling
+  .page-id-31{
+    .workshop-intro, .workshops, .contact{
+      @include desktop{
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+  }
+//Page Header
+  .page-id-31{
+    .entry-header{
+      width: 100%;
+      height: 30vh;
+      display: flex;
+      align-items: flex-end;
+      @include desktop{
+        height: 350px; 
+        align-items: center;
+      }
+    }
+    .entry-title{
+      font-size: 1rem;
+      font-weight: normal;
+      color: white;
+      margin: 0 20px;
+      margin-bottom: 20px;
+      position: relative;
+      @include desktop{
+        margin-bottom: 40px;
+        font-size: 2rem;
+      }
+      &::after{
+        content: "";
+        height: 3px;
+        width: 22%;
+        position: absolute;
+        background: $grape;
+        bottom: 0;
+        left: 0;
+
+      }
+    }
+  }
+
+//Workshops list
+  .workshop-intro{
+    padding: 0 20px;
+  }
+
+  .workshops{
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: none;
+    @include desktop{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      li{
+        width: 50%;
+        &:nth-child(odd){
+          padding-right: 20px;
+        }
+        &:nth-child(even){
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  .workshop-header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .workshop-icon{
+    width: 100px;
+  }
+
+  .workshop-title{
+    // display: inline-block;
+    // max-width: 70%;
+    margin: 0;
+    margin-left: 15px;
+    font-size: 1.3rem;
+  }
+
+  .workshop-number{
+    display: block;
+    font-weight: 200;
+    font-size: 2rem;
+  }
+
+//Contact Button
+  .page-id-31{
+    .contact{
+      width: 100%;
+      padding: 10px;
+      margin: 30px 0;
+      a{
+        margin: 0 auto;
+      }
+      @include tablet{
+        background: $space_gray;
+        margin: 60px 0;
+        padding: 30px;
+      }
+    }
+  }
