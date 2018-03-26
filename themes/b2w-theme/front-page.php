@@ -56,15 +56,20 @@ get_header(); ?>
 		</section>
 
 		<section>
-		<h2> <span class="underline">What</span> <span class="title-norm">People Are Saying</span></h2>					<?php
+		<h1>What People Are Saying</h1>
+					<?php
 						$fields = CFS()->get( 'testimonial_loop' );
 						foreach ( $fields as $field ) {
 							$authorPhoto = $field['author_photo'];
 							$authorText = $field['testimonial_text'];
+							$authorName = $field['author_name'];
+							$authorPosition = $field['author_position'];
 							?>
 							<div class="front-page-testimonials">
 								<img src="<?php echo $authorPhoto?>">
 								<?php echo $authorText?>
+								<?php echo $authorName?>
+								<?php echo $authorPosition?>
 							</div>
 							<?php
 						}
