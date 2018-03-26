@@ -340,3 +340,43 @@ section {
     }
   }
 }
+
+
+/* Search Page CSS */
+
+.search {
+  .site-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    border-top: 1px solid $ultra_violet;
+    h1,
+    h2 {
+      a{
+        text-decoration: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+    .entry-header {
+      height: auto;
+    }
+    .widget-area {
+      display: none;
+      @include desktop {
+        display:block;
+        border-left: 1px solid $ultra_violet;
+        padding-left: 20px;
+        width: 250px;
+        .office-hours-widget {
+          display: flex;
+          .office-hours-days {
+            margin-right: 5px;
+          }
+        }
+      }
+
+    }
+  }
+}
