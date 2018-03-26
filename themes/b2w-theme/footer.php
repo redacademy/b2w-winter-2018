@@ -12,6 +12,11 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 				</div><!-- .site-info -->
+
+				<div class="footer-logo">
+					<img src="<?php echo get_template_directory_uri() . '/images/B2W_logo_final.png'?>">
+				</div>
+				
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
