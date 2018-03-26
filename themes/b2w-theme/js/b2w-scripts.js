@@ -45,9 +45,9 @@
         }
       });
 
-      function decimalCreator(num){
-        return num.toLocaleString('arab');
-      }
+      // function decimalCreator(num){
+      //   return num.toLocaleString('arab');
+      // }
 
   });
 })(jQuery);

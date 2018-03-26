@@ -32,7 +32,9 @@
           transition: .5s;
         }
         @include desktop {
+          padding: 5% 0 0 5%;
           font-size: $h1_text_size;
+          margin-bottom: -10%;
         }
        }
       .about-text {
