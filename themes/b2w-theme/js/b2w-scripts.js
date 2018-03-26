@@ -21,33 +21,23 @@
      $('.menu').prepend('<p class="menu-header">' + 'Menu' + '</p>');
 
     /* Number Scroll */
-
-      function animateValue(id, start, end, duration) {
-        var range = end - start;
-        var current = start;
-        var stepTime = Math.abs(Math.floor(duration / range));
-        var obj = document.getElementById(id);
-        var timer = setInterval(function() {
-            current += 100;
-            obj.innerHTML = current;
-            if (current >= end) {
-                clearInterval(timer);
-                obj.innerHTML = end;
-            }
-        }, stepTime);
-    }
-
     
       $(window).scroll(function () {
         var top  = window.pageYOffset || document.documentElement.scrollTop;
-        if (top > 450 && top < 455) {
-          animateValue('value', 1, 32000, 100);
+        if (top > 450 && top < 475) {
+          var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+          };
+            var demo = new CountUp('value', 0, 32000, 0, 2.5, options);
+            if (!demo.error) {
+              demo.start();
+            } else  {
+            console.error(demo.error);
+            }
         }
       });
-
-      // function decimalCreator(num){
-      //   return num.toLocaleString('arab');
-      // }
-
   });
 })(jQuery);

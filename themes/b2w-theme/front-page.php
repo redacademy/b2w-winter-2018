@@ -46,7 +46,7 @@ get_header(); ?>
 					<p>children live in poverty and most them are from single parent homes.</p>
 				</div>
 				<div class="front-page-stats">
-					<h2 id="value">32,000</h2>
+					<h2 id="value">0</h2>
 					<p>single parents accessing income assistant in BC (May 2016)</p>
 				</div>
 			</div>

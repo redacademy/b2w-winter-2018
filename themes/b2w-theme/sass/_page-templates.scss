@@ -350,9 +350,9 @@ section {
 .search {
   .site-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     margin-top: 10%;
-    border-top: 1px solid $ultra_violet;
     .entry-header{
       display: block;
       padding-left: 2%;
@@ -378,27 +378,6 @@ section {
     .entry-header {
       height: auto;
     }
-    .widget-area {
-      display: none;
-      @include desktop {
-        display:block;
-        border-left: 1px solid $ultra_violet;
-        padding-left: 20px;
-        width: 250px;
-        .office-hours-widget {
-          display: flex;
-          .office-hours-days {
-            margin-right: 5px;
-          }
-        }
-      }
-
-    }
-  }
-  .post,
-  .comment-body,
-  .comments-area,   
-  .comment-respond {
-    border-top: 1px solid $ultra_violet;
   }
 }
+
