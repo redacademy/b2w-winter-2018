@@ -67,11 +67,11 @@
 
     /* Employee Text X button */
 
-      $('.employee-1').prepend('<div><button id="close-button">' + 'X' + '</button></div>' );
-      $('.employee-2').prepend('<div><button id="close-button">' + 'X' + '</button></div>' );
-      $('.employee-3').prepend('<div><button id="close-button">' + 'X' + '</button></div>' );
+      $('.employee-1').prepend('<div><button class="close-button">' + 'X' + '</button></div>' );
+      $('.employee-2').prepend('<div><button class="close-button">' + 'X' + '</button></div>' );
+      $('.employee-3').prepend('<div><button class="close-button">' + 'X' + '</button></div>' );
 
-      $('#close-button').on('click', function () {
+      $('.close-button').on('click', function () {
         console.log('Clicked the X');
         $('.photo-0').css('filter', 'grayscale(100)');
         $('.photo-1').css('filter', 'grayscale(100)');

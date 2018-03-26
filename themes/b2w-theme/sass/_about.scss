@@ -140,9 +140,10 @@
             overflow:visible;
             height: auto;
             width: 100%;
+            // position: absolute;
           }
         }
-    } #close-button {
+    } .close-button {
       z-index: 5;
     }
 }
