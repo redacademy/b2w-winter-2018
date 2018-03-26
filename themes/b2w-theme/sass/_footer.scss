@@ -2,10 +2,19 @@
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-  // width: 100vw;
-  background-color: $gun_metal;
+  width: 100%;
+  height: 300px;
+  background-color: $footer_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   .footer-logo {
+    width: 60%;
     filter: brightness(0) invert(1);
-    width: 20%;
+    @include tablet {
+      width: 20%;
+    }
+
   }
 }
