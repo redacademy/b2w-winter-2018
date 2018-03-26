@@ -18,10 +18,13 @@ get_header(); ?>
 				<?php
 					$fields = CFS()->get( 'employee' );
 						foreach ( $fields as $field ) {
-							?><div class="emp-photo">
+							?> <div class="person-container">
+							<div class="emp-photo">
 							<img src="<?php echo $field['employee_picture'] ?>">
 						</div>
-					<p class="emp-name"><?php	echo $field['employee_name']?></p> <?php
+					<p class="emp-name"><?php	echo $field['employee_name']?></p> 
+						</div>
+						<?php
 						}	
 					?>
 				

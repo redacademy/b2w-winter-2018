@@ -1,3 +1,23 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.site-footer {
+  width: 100%;
+  height: 300px;
+  background-color: $footer_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $space_gray;
+  .footer-logo {
+    width: 60%;
+    filter: brightness(0) invert(1);
+    @include tablet {
+      width: 20%;
+    }
+  }
+  .contact-us-widget-class {
+    width: 30%;
+  }
+}
