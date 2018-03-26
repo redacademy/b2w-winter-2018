@@ -14,6 +14,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<?php get_search_form(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

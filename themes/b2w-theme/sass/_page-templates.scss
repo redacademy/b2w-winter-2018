@@ -230,116 +230,116 @@ section {
 
 /* Contact Us Page */
 
-.page-id-13 {
+// .page-id-13 {
 
-  article {
-    background: $indigo;
-    padding: 5px 0;
+//   article {
+//     background: $indigo;
+//     padding: 5px 0;
 
-    h1 {
-      display: none;
-    }
+//     h1 {
+//       display: none;
+//     }
 
-    label {
-      color: $space_gray;
-      width: 90%;
-      margin: 0 1rem;
-    }
+//     label {
+//       color: $space_gray;
+//       width: 90%;
+//       margin: 0 1rem;
+//     }
 
-    input {
-      width: 90%;
-      margin: 0 1rem;
-      border-radius: 0%;
-      background-color: $space_gray;      
-    }
+//     input {
+//       width: 90%;
+//       margin: 0 1rem;
+//       border-radius: 0%;
+//       background-color: $space_gray;      
+//     }
 
-    .wpcf7-submit {
-      margin-left: 6rem;
-      width: 175px;
-      height: 50px;
-      font-size: $h2_text_size;
-      font-weight: 550;
-      color: $ultra_violet;
-    }
+//     .wpcf7-submit {
+//       margin-left: 6rem;
+//       width: 175px;
+//       height: 50px;
+//       font-size: $h2_text_size;
+//       font-weight: 550;
+//       color: $ultra_violet;
+//     }
 
-    textarea {
-      height: 100px;
-      width: 90%;
-      margin: 0 1rem;
-      background-color: $space_gray;
-    }
+//     textarea {
+//       height: 100px;
+//       width: 90%;
+//       margin: 0 1rem;
+//       background-color: $space_gray;
+//     }
 
-    .map-container {
-      body {
-      display: flex;
-      margin-left: 2rem;
-      width: 90%;
-      margin: 0 1rem;
-      }
+//     .map-container {
+//       body {
+//       display: flex;
+//       margin-left: 2rem;
+//       width: 90%;
+//       margin: 0 1rem;
+//       }
 
-      .map {
-        -webkit-filter: grayscale(100%);
-           -moz-filter: grayscale(100%);
-            -ms-filter: grayscale(100%);
-             -o-filter: grayscale(100%);
-                filter: grayscale(100%);
-      }
-    }
+//       .map {
+//         -webkit-filter: grayscale(100%);
+//            -moz-filter: grayscale(100%);
+//             -ms-filter: grayscale(100%);
+//              -o-filter: grayscale(100%);
+//                 filter: grayscale(100%);
+//       }
+//     }
 
-    iframe {
-      margin: 1rem;
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-       -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-           filter: grayscale(100%);
-  }
-}
+//     iframe {
+//       margin: 1rem;
+//       -webkit-filter: grayscale(100%);
+//       -moz-filter: grayscale(100%);
+//        -ms-filter: grayscale(100%);
+//         -o-filter: grayscale(100%);
+//            filter: grayscale(100%);
+//   }
+// }
 
-  .contact-text-container {
-    width: 90%;
-    padding-bottom: 20px;
-    margin: auto;
+//   .contact-text-container {
+//     width: 90%;
+//     padding-bottom: 20px;
+//     margin: auto;
 
-    .address-container {
-      line-height: 0;
-    }
+//     .address-container {
+//       line-height: 0;
+//     }
 
-    .phone-number-container {
-      display: flex;
-      line-height: 0;
-    }
+//     .phone-number-container {
+//       display: flex;
+//       line-height: 0;
+//     }
 
-    img {
-      width: 100px;
-    }
-  }
+//     img {
+//       width: 100px;
+//     }
+//   }
 
-  .widget-title {
-    margin: 1rem;
-  }
+//   .widget-title {
+//     margin: 1rem;
+//   }
 
-  .office-hours-widget {
-    display: flex;
-    width: 90%;
-    margin: auto;
-  }
+//   .office-hours-widget {
+//     display: flex;
+//     width: 90%;
+//     margin: auto;
+//   }
 
-  .office-hours-days {
-    font-weight: bold;
-    margin-right: 5rem;
+//   .office-hours-days {
+//     font-weight: bold;
+//     margin-right: 5rem;
 
-    p {
-      margin: 5px;
-    }
-  }
+//     p {
+//       margin: 5px;
+//     }
+//   }
   
-  .office-hours-hours {
-    p {
-      margin: 5px;
-    }
-  }
-}
+//   .office-hours-hours {
+//     p {
+//       margin: 5px;
+//     }
+//   }
+// }
 
 
 /* Search, 404, Archive, and  Single CSS*/
