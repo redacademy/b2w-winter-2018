@@ -59,10 +59,11 @@ get_header(); ?>
 			</section>
 
 
-			<div class="contact">
-				<a href="<?php echo wp_make_link_relative('http://localhost:3000/bridge-2-work/contact-us/');?>" class="btn-solid">Get in Contact</a>
-			</div>
+			
 		</main><!-- #main -->
+		<div class="contact">
+			<a href="<?php echo wp_make_link_relative('http://localhost:3000/bridge-2-work/contact-us/');?>" class="btn-solid">Get in Contact</a>
+	</div>
 	</div><!-- #primary -->
-
+	
 <?php get_footer(); ?>

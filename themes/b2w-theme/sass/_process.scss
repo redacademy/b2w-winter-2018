@@ -1,4 +1,12 @@
 .page-id-17{
+  .site-main{
+    max-width: 1200px;
+    margin: 0 auto;
+    @include desktop{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 //candidate requirements
   .post-17{
     @include desktop{
