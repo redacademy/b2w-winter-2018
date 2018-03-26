@@ -24,24 +24,49 @@
       margin-left: -15px;
     }
   /* What We're All About Section*/
-    .about-text {
-      @include desktop {
-        display: flex;
-        justify-content: space-around;
-        h3 {
-          width: 40%;
+    .what-about-wrapper {
+      h2 {          
+        padding: 5% 0 0 10%;
+        @include tablet {
+          font-size: $h2_text_size;
+          transition: .5s;
         }
-        p {
+        @include desktop {
+          font-size: $h1_text_size;
+        }
+       }
+      .about-text {
+        padding: 10px;
+        @include desktop {
           display: flex;
-          align-items: center;
-          width: 40%;
+          justify-content: space-around;
+          h3 {
+            width: 40%;
+          }
+          p {
+            display: flex;
+            align-items: flex-end;
+            width: 40%;
+            
+          }
         }
       }
     }
+
   /* Who We Are Section */
     .who-we-are-wrapper {
       background-color: $space_gray;
       width: 100%;
+      h2 {          
+        padding: 5% 0 0 10%;
+        @include tablet {
+          font-size: $h2_text_size;
+          transition: .5s;
+        }
+        @include desktop {
+          font-size: $h1_text_size;
+        }
+       }
     }
     /* Employee section Wrapper*/
       .employee-wrapper {
