@@ -17,6 +17,9 @@
 					<img src="<?php echo get_template_directory_uri() . '/images/B2W_logo_final.png'?>">
 				</div>
 				
+				<?php if ( is_active_sidebar( 'footer-sidebar') ) : ?>
+					<?php dynamic_sidebar( 'footer-sidebar' ); ?>
+				<?php endif; ?>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

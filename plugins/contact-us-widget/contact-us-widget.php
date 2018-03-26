@@ -163,11 +163,11 @@ class Contact_Us_Widget extends WP_Widget {
 
 		$title = strip_tags( $instance['title'] );
 
-		$monday_friday = strip_tags( $instance['email'] );
+		$email = strip_tags( $instance['email'] );
 	
-		$saturday = strip_tags( $instance['location'] );
+		$location = strip_tags( $instance['location'] );
 	
-		$sunday = strip_tags( $instance['phone_number'] );
+		$phone_number = strip_tags( $instance['phone_number'] );
 	
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );
