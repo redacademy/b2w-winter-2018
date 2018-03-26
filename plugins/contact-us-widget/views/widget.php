@@ -16,7 +16,7 @@
 
 <?php if(strlen( trim( $phone_number ) )>0): ?>
 <p>
-  <span class="day-of-week-span">Sunday:</span>
+  <span class="phone-number-span"></span>
   <?php echo $phone_number; ?>
 </p>
 <?php endif; ?>
