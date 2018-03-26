@@ -342,8 +342,9 @@ section {
 }
 
 
-/* Search, 404, and Single CSS*/
+/* Search, 404, Archive, and  Single CSS*/
 
+.archive,
 .single,
 .error404,
 .search {
@@ -394,9 +395,10 @@ section {
 
     }
   }
-}
-.comment-body,
-.comments-area,
-.comment-respond {
-  border-top: 1px solid $ultra_violet;
+  .post,
+  .comment-body,
+  .comments-area,   
+  .comment-respond {
+    border-top: 1px solid $ultra_violet;
+  }
 }
