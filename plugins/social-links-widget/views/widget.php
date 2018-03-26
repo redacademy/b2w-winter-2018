@@ -3,7 +3,7 @@
 <?php if(strlen( trim( $facebook ) )>0): ?>
 
 <p class="facebook-text">
-  <?php echo $facebook; ?>
+  <a class="facebook-link" href="<?php echo $facebook?>" >Facebook </a>
 </p>
 
 <?php endif; ?>
@@ -11,14 +11,14 @@
 <?php if(strlen( trim( $twitter ) )>0): ?>
  
 <p class="twitter-text">
-   <?php echo $twitter; ?>
+<a class="twitter-link" href="<?php echo $twitter?>" >Twitter</a>
 </p>
 
 <?php endif; ?>
 
 <?php if(strlen( trim( $instagram ) )>0): ?>
 
-<p class= "instagram-text">
-  <?php echo $instagram; ?>
+<p class="instagram-text">
+<a class="instagram-link" href="<?php echo $instagram?>" >Instagram</a>
 </p>
 <?php endif; ?>
