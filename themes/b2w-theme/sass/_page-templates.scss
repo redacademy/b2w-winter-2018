@@ -5,9 +5,6 @@
 .site-content {
   padding-top: 100px;
 
-  @include tablet {
-    padding: 0;
-  }
 
   @include desktop {
     padding: 0;
