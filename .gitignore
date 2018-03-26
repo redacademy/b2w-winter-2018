@@ -31,6 +31,7 @@ access_log
 plugins/*
 !plugins/b2w-functionality/
 !plugins/business-hours-widget/
+!plugins/contact-us-widget/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
