@@ -1,24 +1,24 @@
 <?php
 /**
- * RED WordPress Widget Boilerplate
+ *  Business Hours Widget
  *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
+ * The Contact Us widget created by Eric Chan, Cliff Chan, and Rodrigo Samayoa.
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
  * @package   Business_Hours_Widget
- * @author    Eric Chan <ericchan277@gmail.com>
+ * @author    Eric Chan, Cliff Chan, and Rodrigo Samayoa
  * @license   GPL-2.0+
- * @link      http://example.com
+ * @link      https://github.com/redacademy/b2w-winter-2018
  * @copyright 2018 Red Academy
  *
  * @wordpress-plugin
  * Plugin Name:       Business Hours Widget
- * Plugin URI:        https://github.com/EricChan277
- * Description:       Business Hours Widget, Business Hours
+ * Plugin URI:        https://github.com/redacademy/b2w-winter-2018
+ * Description:       Business Hours Plugin, Business Hours
  * Version:           1.0.0
- * Author:            Eric Chan	
- * Author URI:        https://github.com/EricChan277
+ * Author:            Eric Chan, Cliff Chan, and Rodrigo Samayoa
+ * Author URI:        https://github.com/redacademy/b2w-winter-2018
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
