@@ -41,11 +41,10 @@
         width: 50%;
         padding: 0;
         margin: 0;
-        overflow-x: hidden;
-        overflow-y: visible;
+        overflow: visible;
         img{
           height: 115%;
-          max-width: none;
+          max-width: 100%;
           object-fit: cover;
         }
       }
