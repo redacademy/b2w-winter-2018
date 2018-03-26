@@ -32,9 +32,10 @@
           transition: .5s;
         }
         @include desktop {
-          padding: 5% 0 0 5%;
+          padding: 5% 0 0 4%;
           font-size: $h1_text_size;
-          margin-bottom: -10%;
+          margin-bottom: -9%;
+          width: 47%;
         }
        }
       .about-text {
@@ -43,11 +44,11 @@
           display: flex;
           justify-content: space-around;
           h3 {
-            width: 40%;
+            width: 50%;
           }
           p {
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             width: 40%;
             
           }
