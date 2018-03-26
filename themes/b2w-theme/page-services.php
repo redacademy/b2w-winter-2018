@@ -15,16 +15,16 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				
-				<?php echo CFS()->get( 'services_internship' );?>
-				<?php echo CFS()->get( 'services_placement' );?>
-				<?php echo CFS()->get( 'services_permanent' );?>
-				<img src="<?php echo CFS()->get( 'services_image' );?>">
+					<?php echo CFS()->get( 'services_internship' );?>
+					<?php echo CFS()->get( 'services_placement' );?>
+					<?php echo CFS()->get( 'services_permanent' );?>
+					<img src="<?php echo CFS()->get( 'services_image' );?>">
 
-				<h1>Why Hire Temp Staff?</h1>
-				<?php echo CFS()->get( 'services_hire_temp' );?>
-				<img src="<?php echo CFS()->get( 'services_image2' );?>">
+					<h1>Why Hire Temp Staff?</h1>
+					<?php echo CFS()->get( 'services_hire_temp' );?>
+					<img src="<?php echo CFS()->get( 'services_image2' );?>">
 
-				<h1>What People Are Saying</h1>
+					<h1>What People Are Saying</h1>
 
 				<?php
 						$fields = CFS()->get( 'testimonial_loop' );

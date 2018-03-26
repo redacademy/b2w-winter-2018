@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<section class="front-page-hero">
 			<div class="hero-text-container">
-				<h1 class="hero-text">Be The Difference.</h1>
+				<h2 class="hero-text">Be The Difference.</h2>
 				<a href="services/" class="btn">Learn How</a>
 			</div>
 		</section>
@@ -22,7 +22,7 @@ get_header(); ?>
 		</section>
 
 		<section>
-		<h2> <span class="underline">Our</span> <span class="title-norm">Services</span></h2>
+		<h1>Our Services</h1>
 		<div class="front-page-services">
 					<div class="front-page-services-text">	
 						<img src="<?php echo get_template_directory_uri() . '/images/paid-internship.svg' ?>">
