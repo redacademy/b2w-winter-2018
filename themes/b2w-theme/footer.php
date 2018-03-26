@@ -17,9 +17,11 @@
 					<img src="<?php echo get_template_directory_uri() . '/images/B2W_logo_final.png'?>">
 				</div>
 				
-				<?php if ( is_active_sidebar( 'footer-sidebar') ) : ?>
-					<?php dynamic_sidebar( 'footer-sidebar' ); ?>
-				<?php endif; ?>
+				<div class="widget-container">
+					<?php if ( is_active_sidebar( 'footer-sidebar') ) : ?>
+						<?php dynamic_sidebar( 'footer-sidebar' ); ?>
+					<?php endif; ?>
+				</div>
 
 				<p class="footer-copy"> &copy; 2018 Bridge2Work - Thriving Generation Employment Agency CCC Inc. </p> 
 			</footer><!-- #colophon -->
