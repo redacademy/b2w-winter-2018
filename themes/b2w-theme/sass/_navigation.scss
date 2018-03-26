@@ -204,6 +204,7 @@ a {
 	a {
 		color: $space_gray;
 		text-decoration: none;
+		padding: 15px;
 		@include desktop {
 			color: black;
 		}
