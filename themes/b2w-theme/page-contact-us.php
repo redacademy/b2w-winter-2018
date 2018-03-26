@@ -34,11 +34,17 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		<div class="address-container">
-		<?php echo CFS()->get( 'contact_address' );?>
+			<div class="address-text">
+				<?php echo CFS()->get( 'contact_address' );?>
+			
+			</div>
+			<?php get_sidebar(); ?>
+			<div class="map-container"><?php echo CFS()->get( 'contact_map' );?></div>
+			
 		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
