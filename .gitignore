@@ -32,6 +32,7 @@ plugins/*
 !plugins/b2w-functionality/
 !plugins/business-hours-widget/
 !plugins/contact-us-widget/
+!plugins/social-links-widget/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #

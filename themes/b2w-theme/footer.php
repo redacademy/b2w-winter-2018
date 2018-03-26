@@ -20,6 +20,8 @@
 				<?php if ( is_active_sidebar( 'footer-sidebar') ) : ?>
 					<?php dynamic_sidebar( 'footer-sidebar' ); ?>
 				<?php endif; ?>
+
+				<p class="footer-copy"> &copy; 2018 Bridge2Work - Thriving Generation Employment Agency CCC Inc. </p> 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
