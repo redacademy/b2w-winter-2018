@@ -37,8 +37,17 @@
       color: $space_gray;
       width: 150px;
       font-size: 1.25rem;
+      border: 0;
       }
   } 
+}
+
+.underline {
+  border-bottom: 5px solid $lilac;
+  padding-right: 15px;
+}
+.title-norm {
+  margin-left: -15px;
 }
 
 .info-text-container {
@@ -110,7 +119,7 @@
 
 .h2-title-text {
   border-bottom: 5px solid #694f93;
-  width: 50px;
+  width: auto;
 }
 
 .front-page-testimonials {
@@ -125,8 +134,62 @@
     border-radius: 100%;
     height: 75px;
     width: 75px;
+    object-fit: center;
     margin: 1rem 1rem;
   }
+}
+
+.testimonial-button {
+  display: flex;
+  align-content: center;
+
+  .btn {
+    width: 1000px;
+  }
+
+  a {
+    margin: auto;
+    font-size: $h4_text_size;
+    width: 200px;
+    padding: 1rem;
+  }
+}
+
+/* Services Page */
+
+.page-id-19 {
+  .site-main{
+    width: 90%;
+    margin: auto;
+
+    h2 {
+      margin: 0;
+      font-size: $h4_text_size;
+    }
+
+    p {
+      margin-top: 0;
+      font-size: $h5_text_size *1.2;
+      font-weight: 200;
+    }
+  }
+
+  .service-page-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $indigo;
+    color: $space_gray;
+    margin: 1rem;
+    padding: 1rem;
+  
+    img {
+      border-radius: 100%;
+      height: 75px;
+      width: 75px;
+      margin: 1rem 1rem;
+    }
+  }
+
 }
 
 /* Contact Us Page */
