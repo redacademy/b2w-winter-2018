@@ -9,14 +9,13 @@
   flex-direction: column;
   color: $space_gray;
   padding: 0 15px;
-  
-  .footer-logo-widget-wrapper { 
-    @include tablet {
-      display: flex;
-      justify-content: space-around;
+  /* Footer logo and widget wrapper */
+    .footer-logo-widget-wrapper { 
+      @include tablet {
+        display: flex;
+        justify-content: space-around;
+      }
     }
-
-  }
     /* Footer logo */
       .footer-logo {
         margin-top: 20px;
