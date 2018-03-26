@@ -13,7 +13,7 @@ get_header(); ?>
 		<section class="front-page-hero">
 			<div class="hero-text-container">
 				<h1 class="hero-text">Be The Difference.</h1>
-				<button class="btn">Learn How</button>
+				<a href="services/" class="btn">Learn How</a>
 			</div>
 		</section>
 
@@ -22,8 +22,8 @@ get_header(); ?>
 		</section>
 
 		<section>
-			<h2 class="h2-title-text">Our Services</h2>
-				<div class="front-page-services">
+		<h2> <span class="underline">Our</span> <span class="title-norm">Services</span></h2>
+		<div class="front-page-services">
 					<div class="front-page-services-text">	
 						<img src="<?php echo get_template_directory_uri() . '/images/paid-internship.svg' ?>">
 							<h5>Paid Internship</h5>
@@ -56,21 +56,28 @@ get_header(); ?>
 		</section>
 
 		<section>
-			<h2 class="h2-title-text">What People Are Saying</h2>
+		<h1>What People Are Saying</h1>
 					<?php
 						$fields = CFS()->get( 'testimonial_loop' );
 						foreach ( $fields as $field ) {
 							$authorPhoto = $field['author_photo'];
 							$authorText = $field['testimonial_text'];
+							$authorName = $field['author_name'];
+							$authorPosition = $field['author_position'];
 							?>
 							<div class="front-page-testimonials">
 								<img src="<?php echo $authorPhoto?>">
 								<?php echo $authorText?>
+								<?php echo $authorName?>
+								<?php echo $authorPosition?>
 							</div>
 							<?php
 						}
 					?>
-		</section>
+			<div class="testimonial-button">		
+				<a href="services/" class="btn">Learn How</a>
+			</div>
+			</section>
 
 
 		</main><!-- #main -->

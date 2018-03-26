@@ -19,6 +19,24 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
+h1{
+	font-size: 1.4rem;
+	font-weight: bold;
+	position: relative;
+	@include desktop{
+		font-size: 2rem;
+	}
+	&::after{
+		content: "";
+		height: 3px;
+		width: 22%;
+		position: absolute;
+		background: $grape;
+		bottom: 0;
+		left: 0;
+	}
+}
+
 h2 {
 	font-family: $font__main;
 	font-weight: 600;

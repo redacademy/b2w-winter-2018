@@ -1,0 +1,168 @@
+.page-id-17{
+//candidate Requirements
+  h1{
+    margin: 1.5rem 20px;
+  }
+  p{
+    padding: 0 20px;
+  }
+  .candidate-requirements{
+    img{
+      margin: 0 auto;
+      margin-bottom: -7px;
+      padding: 0 20px;
+      z-index: -1;
+    }
+    ol{
+      background: $ultra-violet;
+      color: white;
+      margin: 0;
+      padding: 20px;
+      counter-reset: item;
+    }
+    li{
+      display: block;
+      margin: 20px 0;
+      &::before {
+        content: "0" counter(item) ". "; 
+        counter-increment: item; 
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+//workshops button
+  .workshops-promo{
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    a{
+      @extend .btn-border;
+      max-width: none;
+      font-weight: bolder;
+      font-size: 1.3rem;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+
+//Job Placements
+  .placement-content{
+    min-height: 100vh;
+    @include desktop{
+      min-height: 0;
+      height: 400px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      .img-container{
+        width: 50%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        img{
+          height: 100%;
+          object-fit: cover;
+
+        }
+      }
+      
+    }
+  }
+  .boxes-container{
+    position: relative;
+    bottom: 20px;
+    padding: 0;
+    margin: 0 auto;
+    height: 400px;
+    width: 96%;
+    max-width: 350px;
+    @include tablet{
+      max-width: 600px;
+    }
+    @include desktop{
+      width: 50%;
+      top: 0;
+      // height: auto;
+    }
+  }
+
+  .box{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    position: absolute;
+    background: pink;
+    border: 1px blue dotted;
+    transition: 0.5s;
+    h3{
+      font-weight: normal;
+      margin: 10px 0;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+    }
+    @include tablet{
+      width: 180px;
+      height: 180px;
+      padding: 10px;
+      h3{
+        font-weight: normal;
+        margin: 10px 0;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .box-0{
+    @include tablet{
+      left: 18%;
+    }
+    @include desktop{
+      top: 10px;
+      left: -40px;
+    }
+  }
+  .box-1{
+    right: 0;
+    top: 30px;
+    @include tablet{
+      right: 18%;
+    }
+    @include desktop{
+      left: 180px;
+      top: 10px;
+    }
+  }
+  .box-2{
+    top: 160px;
+    @include tablet{
+      left: 18%;
+      top: 190px;
+    }
+    @include desktop{
+      left: 40px;
+      top: initial;
+      bottom: 10px;
+    }
+  }
+  .box-3{
+    top: 190px;
+    right: 0;
+    @include tablet{
+      top: 220px;
+      right: 18%; 
+    }
+    @include desktop{
+      left: 260px;
+      top: initial;
+      bottom: 10px;
+    }
+  }
+
