@@ -1,0 +1,112 @@
+.page-id-13 {
+
+  article {
+    padding: 5px 0;
+  }
+
+    .entry-header{
+      height: auto;
+    }
+
+    h1{
+      color: black;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    .entry-content{
+      padding: 0;
+      p{
+        padding: 0 20px;
+      }
+      img{
+        width: 80px;
+        margin: 0 20px;
+      }
+    }
+
+    .wpcf7{
+      background: $indigo;
+      padding: 20px;
+      padding-bottom: 4px;
+      p{
+        padding: 0;
+      }
+      p:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      label {
+      color: $space_gray;
+      width: 100%;
+      }
+
+      input, textarea {
+        width: 100%;
+        border-radius: 0%;
+        background-color: $space_gray;      
+      }
+
+      .wpcf7-submit {
+        margin: 0 auto;
+        text-align: center;
+        width: 175px;
+        height: 50px;
+        font-size: $h2_text_size;
+        font-weight: 550;
+        color: $ultra_violet;
+        display: block;
+      }
+
+      textarea {
+        height: 100px;
+      }
+    }
+    
+    .address-container {
+      padding: 0 20px;
+      h2{
+        @extend h1;
+        margin: 0
+      }
+      strong{
+        color: $ultra_violet;
+      }
+
+      .map {
+        -webkit-filter: grayscale(100%);
+           -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+             -o-filter: grayscale(100%);
+                filter: grayscale(100%);
+      }
+    }
+
+
+  .widget-title {
+      @extend h1;
+      margin: 10px 20px;
+  }
+
+  .office-hours-widget {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+
+  .office-hours-days {
+    font-weight: bold;
+    margin-right: 5rem;
+
+    p {
+      margin: 5px;
+    }
+  }
+  
+  .office-hours-hours {
+    p {
+      margin: 5px;
+    }
+  }
+}

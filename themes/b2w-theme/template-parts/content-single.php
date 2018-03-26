@@ -17,7 +17,7 @@
 		the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php b2w_posted_on(); ?> / <?php b2w_comment_count(); ?> / <?php b2w_posted_by(); ?>
+			<?php b2w_posted_on(); ?> <?php b2w_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
