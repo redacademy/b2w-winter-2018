@@ -13,11 +13,16 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php the_content(); ?>
+				<div class="intro-content">
+					<?php the_content(); ?>
+				</div>	
 				<div class="candidate-requirements">
-					<?php if ( has_post_thumbnail() ) : ?>
+					<div class="candidate-hero">
+						<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'large' ); ?>
-					<?php endif; ?>
+						<?php endif; ?>
+					</div>
+					
 
 					<?php echo CFS()->get( 'candidate_requirements' );?>
 				</div><!-- .entry-content -->
@@ -44,10 +49,11 @@ get_header(); ?>
 							<h3><?php echo $field['box_title'];?></h3>
 							<p> <?php echo $field['box_text'];?> </p>
 						</div>
-
 							<?php
 							}
 							?>
+							<div class="empty-box-1"></div>
+							<div class="empty-box-2"></div>
 					</div>
 				</div>
 			</section>
