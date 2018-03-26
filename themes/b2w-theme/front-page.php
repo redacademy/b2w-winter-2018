@@ -65,6 +65,7 @@ get_header(); ?>
 							$authorName = $field['author_name'];
 							$authorPosition = $field['author_position'];
 							?>
+						<div class="front-page-testimonials-container">
 							<div class="front-page-testimonials">
 								<img src="<?php echo $authorPhoto?>">
 								<?php echo $authorText?>
@@ -74,6 +75,9 @@ get_header(); ?>
 							<?php
 						}
 					?>
+						</div>
+					</div>
+
 			<div class="testimonial-button">		
 				<a href="services/" class="btn">Learn How</a>
 			</div>

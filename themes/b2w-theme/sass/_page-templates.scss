@@ -27,7 +27,7 @@
 
   .hero-text-container {
     margin: 0 0 0 50px;
-    padding-top: 25px;
+    padding-top: 10px;
 
     @include desktop {
       display: block;
@@ -155,20 +155,33 @@ section {
   width: auto;
 }
 
-.front-page-testimonials {
-  display: flex;
-  background-color: $indigo;
-  color: $space_gray;
-  justify-content: space-around;
-  margin: 2rem;
-  padding: 1rem;
+.front-page-testimonials-container {
+  @include desktop {
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .front-page-testimonials {
+    display: flex;
+    background-color: $indigo;
+    color: $space_gray;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 1rem;
 
-  img {
-    border-radius: 100%;
-    height: 75px;
-    width: 75px;
-    object-fit: center;
-    margin: 1rem 1rem;
+    @include desktop {
+      width: 500px;
+      margin: 2rem auto;
+    }
+
+    img {
+      border-radius: 100%;
+      height: 75px;
+      width: 75px;
+      object-fit: center;
+      margin: 1rem 1rem;
+    }
   }
 }
 
@@ -176,8 +189,16 @@ section {
   display: flex;
   align-content: center;
 
+  @include desktop {
+    background: $space_gray;
+  }
+
   .btn {
     width: 1000px;
+
+    @include desktop {
+      margin: 1rem auto;
+    }
   }
 
   a {
@@ -194,6 +215,56 @@ section {
   .site-main{
     width: 90%;
     margin: auto;
+    
+    @include desktop {
+      img {
+        width: 500px;
+        height: 350px;
+      };
+    }
+
+    .services-container-desktop {
+      @include desktop {
+      display: flex;
+      }
+    }
+
+    .entry-header {
+      display: none;
+
+      @include tablet {
+        margin: 0;
+      }
+      
+      @include desktop {
+        margin: 0;
+      }
+
+    }
+
+    .services-hide {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+      
+      @include desktop {
+        display: block;
+      }
+    }
+
+    .services-hide-desktop {
+      @include tablet {
+        display: none;
+      }
+      
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
 
     h2 {
       margin: 0;
@@ -205,7 +276,6 @@ section {
       font-size: $h5_text_size *1.2;
       font-weight: 200;
     }
-  }
 
   .service-page-testimonials {
     display: flex;
@@ -222,7 +292,6 @@ section {
       margin: 1rem 1rem;
     }
   }
-
 }
 
 /* Contact Us Page */
