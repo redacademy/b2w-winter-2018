@@ -1,0 +1,93 @@
+/* Search, 404, Archive, and  Single CSS*/
+
+//Single Post
+.single{
+  .content-area{
+    max-width: 1200px;
+    padding: 20px;
+    padding-top: 0;
+    @include tablet{
+      padding: 50px;
+      padding-top: 0;
+    }
+  }
+
+.archive,
+.single,
+.error404,
+.search {
+.site-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  .entry-header{
+    display: block;
+    margin: 20px 0;
+  }
+
+  .posted-on, .byline{
+    display: block;
+  }
+
+  .byline{
+    font-weight: bold;
+  }
+
+  .entry-content{
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .nav-previous{
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    a{
+      text-decoration: none;
+      color: $ultra_violet;
+      padding: 10px 20px;
+      &:hover{
+        color: white;
+        background: $indigo;
+      }
+      &::before{
+        content: "\2190"
+      }
+    padding-left: 2%;
+    margin-bottom: 5%;
+    }
+  }
+    h1 {
+      font-size: $h1_text_size;
+      margin: 0;
+    }
+    .entry-meta {
+      padding-left: 5%;
+    }
+  }
+  h1,
+  h2 {
+    color: black;
+    a{
+      text-decoration: none;
+      color: $ultra_violet;
+      padding: 10px 20px;
+      &:hover{
+        color: white;
+        background: $indigo;
+      }
+      &::after{
+        content: "\2192"
+      }
+    }
+    &:after {
+      display: none;
+    }
+  }
+  .entry-header {
+    height: auto;
+  }
+}
+}

@@ -37,7 +37,6 @@ get_header(); ?>
 
 					<h1>What People Are Saying</h1>
 
-					<div class="desktop-services">
 						<div class="main-carousel">
 							<?php
 								$fields = CFS()->get( 'testimonial_loop' );
@@ -59,32 +58,9 @@ get_header(); ?>
 						endforeach;
 						?>
 						</div>
-					</div>
 
-					<div class="mobile-services">
-							<?php
-								$fields = CFS()->get( 'testimonial_loop' );
-								foreach ( $fields as $field ) :
-									$authorPhoto = $field['author_photo'];
-									$authorName = $field['author_name'];
-									$authorText = $field['testimonial_text'];
-								?>
-
-									<div class="service-page-testimonials">
-										<img src="<?php echo $authorPhoto?>">
-											</br>
-									<div class="mobile-services-text">
-										<p><?php echo $authorText?></p>
-										<h4><?php echo $authorName?></h4>
-									</div>
-								</div>
-						<?php
-						endforeach;
-						?>
-					</div>
-
-				<div class="discover-button">
-					<a href="process/" class="btn">Discover Our Process</a>
+				<div class="services-discover">
+						<a href="process/" class="btn">Discover Our Process</a>
 				</div>
 
 			<?php endwhile; // End of the loop. ?>
