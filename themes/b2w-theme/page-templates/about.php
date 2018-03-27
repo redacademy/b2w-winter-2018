@@ -32,8 +32,8 @@ get_header(); ?>
 									</button>
 								</div>
 								<h3 class="emp-name"><?php	echo $employeeName ?></h3> 
-								<?php echo $employeeText?>
 							</div>
+								<?php echo $employeeText?>
 						<?php
 							}	
 					?>

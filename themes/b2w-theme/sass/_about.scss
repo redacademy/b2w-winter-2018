@@ -73,6 +73,7 @@
     }
     /* Employee section Wrapper*/
       .employee-wrapper {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -138,13 +139,21 @@
           display: none;
           @include desktop{
             overflow:visible;
-            height: auto;
-            width: 100%;
-            // position: absolute;
+            height: 300px;
+            width: 90%;
+            position: absolute;
+            bottom: -97%;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+          .name-in-box {
+            font-size: $h3_text_size;
           }
         }
     } .close-button {
       z-index: 5;
+      width: 100%;
     }
 }
 
