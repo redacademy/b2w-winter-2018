@@ -59,11 +59,10 @@
   .front-page-info-text {
     width: 75%;
     margin: 0 auto;
-<<<<<<< HEAD
     width: 75px;
     height: 75px;
   }
-}
+
 
 .front-page-services-text {
   display: block;
@@ -79,13 +78,11 @@
     text-align: center;
     margin: 1rem 0 0 0;
   }
-}
-=======
-    padding: 25px 0;
-    text-align: center;
-    font-weight: 500;
-    color: $ultra_violet;
->>>>>>> 6608eb11c5adda1de80d011efbd07fc581599391
+
+    // padding: 25px 0;
+    // text-align: center;
+    // font-weight: 500;
+    // color: $ultra_violet;
 
     @include desktop {
       width: 40%;
