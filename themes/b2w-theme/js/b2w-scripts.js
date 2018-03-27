@@ -76,7 +76,6 @@ jQuery(document).ready(function ($) {
     $('.text-wrap').append('<button class="close-button">X</button>')
 
     $('.close-button').on('click', function () {
-      console.log('Clicked the X');
       $('.photo-0').css('filter', 'grayscale(100)');
       $('.photo-1').css('filter', 'grayscale(100)');
       $('.photo-2').css('filter', 'grayscale(100)');
