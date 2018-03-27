@@ -37,4 +37,8 @@
   @include tablet{
     padding: 0 50px;
   }
+  @include desktop{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

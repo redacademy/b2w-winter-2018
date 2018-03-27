@@ -125,9 +125,7 @@
           width: 100%;
           height: 100%;
         }
-        .employee-1,
-        .employee-2,
-        .employee-3 {
+        .text-wrap {
           background-color: $ultra_violet;
           width: 100vw;
           color: $space_gray;
@@ -137,23 +135,42 @@
           height: 200px;
           overflow:scroll;
           display: none;
+          flex-direction: column;
           @include desktop{
+            flex-direction: row;
             overflow:visible;
-            height: 300px;
-            width: 90%;
+            height: 400px;
             position: absolute;
-            bottom: -97%;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+            bottom: -108%;
+            justify-content: space-around;
           }
-          .name-in-box {
+          p{
+            @include desktop {
+              width: 50%;
+            }
+          }
+          h3 {
             font-size: $h3_text_size;
+            display: flex;
+            align-items: center;
+            padding-top: 50px;
+            @include desktop {
+              font-size: $h2_text_size;
+              padding-top: 0;
+            }
+          }
+          .close-button {
+            z-index: 5;
+            position: absolute;
+            left: 5%;
+            top: 10%;
+            background-color: transparent;
+            border: none;
+            color: $space_gray;
+            padding: 15px 0;
+            font-size: $h2_text_size;
           }
         }
-    } .close-button {
-      z-index: 5;
-      width: 100%;
-    }
+    } 
 }
 

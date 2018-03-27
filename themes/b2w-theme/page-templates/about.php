@@ -33,7 +33,11 @@ get_header(); ?>
 								</div>
 								<h3 class="emp-name"><?php	echo $employeeName ?></h3> 
 							</div>
+
+							<div class= "text-wrap text-name-<?php echo $key ?>">
+								<h3> <?php echo $employeeName ?> </h3>
 								<?php echo $employeeText?>
+							</div>
 						<?php
 							}	
 					?>
