@@ -1,5 +1,13 @@
 //General Styling
   .page-id-31{
+    .workshops, .workshop-intro{
+      max-width: 1200px;
+      margin: 0 auto;
+      @include desktop{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    } 
     .workshop-intro, .workshops, .contact{
       @include desktop{
         padding-left: 50px;
@@ -20,7 +28,7 @@
       }
     }
     .entry-title{
-      font-size: 1rem;
+      // font-size: 1rem;
       font-weight: normal;
       color: white;
       margin: 0 20px;
@@ -29,6 +37,7 @@
       @include desktop{
         margin-bottom: 40px;
         font-size: 2rem;
+        margin-left: 10%;
       }
       &::after{
         content: "";

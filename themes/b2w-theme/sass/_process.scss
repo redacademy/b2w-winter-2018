@@ -1,4 +1,12 @@
 .page-id-17{
+  .site-main{
+    max-width: 1200px;
+    margin: 0 auto;
+    @include desktop{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 //candidate requirements
   .post-17{
     @include desktop{
@@ -219,47 +227,7 @@
     }
   }
 
-  .empty-box-1{
-    height: 50px; 
-    width: 150px;
-    background: $space_gray;
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-    z-index: -10;
-    @include tablet{
-      width: 180px;
-      left: 18%;
-      bottom: -35px;
-    }
-    @include desktop{
-      height: 70px;
-      right: 30px;
-      left: auto;
-      bottom: 210px;
-    }
-  }
-
-  .empty-box-2{
-    height: 50px; 
-    width: 150px;
-    background: $space_gray;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -10;
-    @include tablet{
-      width: 180px;
-      right: 18%;
-      bottom: -60px
-    }
-    @include desktop{
-      height: 120px;
-      width: 120px;
-      right: 10px;
-      bottom: 70px;
-    }
-  }
+  
 
 //contact button
 .page-id-17{

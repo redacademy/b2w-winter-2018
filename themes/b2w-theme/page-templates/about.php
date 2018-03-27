@@ -19,13 +19,21 @@ get_header(); ?>
 				<div class="employee-wrapper">
 					<?php
 						$fields = CFS()->get( 'employee' );
-							foreach ( $fields as $field ) {
-					?>	<div class="person-container">
-								<div class="emp-photo">
-									<img src="<?php echo $field['employee_picture'] ?>">
+							foreach ( $fields as $key=>$field ) {
+
+								$employeePicture = $field['employee_picture'];
+								$employeeName = $field['employee_name'];
+								$employeeText = $field['employee_text'];
+
+					?>	<div class="person-wrap">
+								<div class="emp-photo photo-<?php echo $key ?>">
+									<button class="emp-info-button emp-button-<?php echo $key ?>">
+										<img src="<?php echo $employeePicture ?>">
+									</button>
 								</div>
-								<p class="emp-name"><?php	echo $field['employee_name']?></p> 
+								<h3 class="emp-name"><?php	echo $employeeName ?></h3> 
 							</div>
+								<?php echo $employeeText?>
 						<?php
 							}	
 					?>

@@ -25,7 +25,7 @@
 					</div>
 				</div>
 
-				<p class="footer-copy"> &copy; 2018 Bridge2Work - Thriving Generation Employment Agency CCC Inc. </p> 
+				<p class="footer-copy"> &copy; <?php echo date('Y'); ?> Bridge2Work - Thriving Generation Employment Agency CCC Inc. </p> 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
