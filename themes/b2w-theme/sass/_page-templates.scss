@@ -183,7 +183,13 @@
         margin: 1rem 1rem;
       }
     }
-  }
+    
+    .services-title-container {
+      
+      @include desktop {
+      margin: 1rem 0 10rem 0;
+      }
+    }
 
   .testimonial-button {
     display: flex;
@@ -200,13 +206,6 @@
         margin: 1rem auto;
       }
     }
-
-    a {
-      margin: auto;
-      font-size: $h4_text_size;
-      width: 200px;
-      padding: 1rem;
-    }
   }
 
 /* Services Page */
@@ -217,10 +216,9 @@
       margin: auto;
       
       @include desktop {
-        img {
-          width: 500px;
-          height: 350px;
-        };
+        display: block;
+        width: 400px;
+        margin: 0 10rem 0 0;
       }
 
       .services-container-desktop {
@@ -228,6 +226,7 @@
         display: flex;
         }
       }
+    }
 
       .entry-header {
         display: none;
@@ -265,6 +264,23 @@
       }
     }
 
+    .hire-temp1 {
+
+      @include desktop {
+      order: 2;
+      width: 400px;
+      margin: 0 0 1rem 8rem;
+    }
+  }
+
+    .hire-temp2 {
+
+      @include desktop {
+      order: 1;
+      }
+    }
+  }
+
 
       h2 {
         margin: 0;
@@ -277,19 +293,115 @@
         font-weight: 200;
       }
 
+    .desktop-services {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
+    .mobile-services {
+      display: block;
+
+      @include desktop {
+        display: none;
+      }
+
+      .mobile-services-text {
+        display: block;
+      }
+
+      .service-page-testimonials {
+        display: flex;
+        background-color: $indigo;
+        color: $space_gray;
+        padding: 1rem .5rem;
+        margin: 1rem;
+  
+          h4 {
+            margin: 0 auto;
+          }
+  
+        img {
+          border-radius: 100%;
+          margin: 0 5px;
+          height: 75px;
+          width: 75px;
+        }
+  
+        p {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+    }
+
+  .main-carousel {
+    @include desktop {
+      display: block;
+    }
+
+    .carousel-cell {
+      display: flex;
+    }
+    
     .service-page-testimonials {
       display: flex;
-      flex-wrap: wrap;
       background-color: $indigo;
       color: $space_gray;
-      margin: 1rem;
       padding: 1rem;
+
+      @include desktop {
+        display: block;
+        margin: 2rem;
+        width: 50%;
+        line-height: 1.25;
+
+        h4 {
+          margin: 0;
+        }
+      }
     
+    .carousel-img-name {
+      display: block;
+    }
+
       img {
         border-radius: 100%;
         height: 75px;
         width: 75px;
-        margin: 1rem 1rem;
+      }
+
+      p {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+}
+
+  .discover-button {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      margin-top: 2rem;
+      width: 100%;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-image: url('../../images/discover-image.png');
+      
+    img {
+      width: 100%;
+      height: 200px;
+      }
+
+    .btn {
+      margin: auto;
+      color: $ultra_violet;
+      font-weight: 400;
+      background-color: $space_gray;
       }
     }
   }
@@ -403,3 +515,4 @@
       }
     }
   }
+  
