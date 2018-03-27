@@ -1,13 +1,18 @@
 jQuery(document).ready(function ($) {
 
   /* Hamburger Menu Functionality JS */
-    $(window).on('resize', function () { /* Function triggers on menu sizing*/
-      if (document.body.clientWidth < 800) {
-        $('.nav-menu').removeClass('menu-expanded');
-        $('#menu-toggle').removeClass('is-active');
-      }
-    })
-
+                        
+    /* Function triggers on menu sizing*/
+      var resizeTimer;
+      $(window).on('resize', function(e) {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          if (document.body.clientWidth < 800) {
+            $('.nav-menu').removeClass('menu-expanded');
+            $('#menu-toggle').removeClass('is-active');
+          }
+        }, 250);
+      });
   /* Triggers the burger transformation and menu display*/
     $('#menu-toggle').on('click', function () {
       $(this).toggleClass('is-active');
@@ -20,7 +25,7 @@ jQuery(document).ready(function ($) {
 
   /* Number Scroll */
 
-    $('.home').on('load', function () {
+    // $('.home').on('load', function () {
       $(window).scroll(function () {
         var top = window.pageYOffset || document.documentElement.scrollTop;
         if (top > 450 && top < 475) {
@@ -38,7 +43,7 @@ jQuery(document).ready(function ($) {
           }
         }
       });
-    })
+    // })
 
 
   /* About us Employee Text */
