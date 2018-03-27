@@ -1,0 +1,63 @@
+.blog{
+  .site-content{
+    @include desktop{
+      display: flex;
+      flex-flow: row nowrap;
+    }
+    
+  }
+  .content-area{
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include desktop{
+      width: 69%;
+      border-right: 1px solid $space_gray;
+      padding-top: 0;
+      margin-top: 100px;
+    }
+  }
+
+  .page-title{
+    color: $ultra_violet;
+    @include desktop{
+
+    }
+  }
+  article{
+    .entry-header{
+      height: auto;
+      display: block;
+    }
+    .entry-title{
+      margin: 0;
+      &::after{
+        content: "";
+        display: none;
+      }
+      a{
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+      &:hover{
+        color: $grape;
+      }
+      }
+    }
+
+    .entry-content{
+      padding: 0;
+    }
+  }
+  
+  .read-more{
+    display: block;
+    text-align: right;
+    font-weight: bold;
+  }
+  .author{
+    font-weight: bold;
+  }
+
+}
