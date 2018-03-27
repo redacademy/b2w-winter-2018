@@ -4,7 +4,8 @@
   "description": "A starter theme for Bridge 2 Work, based on Underscores.",
   "main": "gulpfile.js",
   "dependencies": {
-    "countup.js": "^1.9.3"
+    "countup.js": "^1.9.3",
+    "flickity": "^2.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
