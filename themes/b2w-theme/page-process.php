@@ -52,8 +52,6 @@ get_header(); ?>
 							<?php
 							}
 							?>
-							<div class="empty-box-1"></div>
-							<div class="empty-box-2"></div>
 					</div>
 				</div>
 			</section>
