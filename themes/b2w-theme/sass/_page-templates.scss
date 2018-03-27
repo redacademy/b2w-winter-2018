@@ -155,6 +155,7 @@ section {
   }
 
   h3 {
+    width: auto;
     text-align: center;
     font-weight: 400;
     color: white;
@@ -162,6 +163,7 @@ section {
 
     @include desktop {
       font-size: $h3_text_size*.85;
+      margin: 0;
     }
   }
 
@@ -345,50 +347,50 @@ section {
       font-weight: 200;
     }
 
-    .desktop-services {
-      display: none;
+    // .desktop-services {
+    //   display: none;
 
-      @include desktop {
-        display: block;
-      }
-    }
+    //   @include desktop {
+    //     display: block;
+    //   }
+    // }
 
-    .mobile-services {
-      display: block;
+    // .mobile-services {
+    //   display: block;
 
-      @include desktop {
-        display: none;
-      }
+    //   @include desktop {
+    //     display: none;
+    //   }
 
-      .mobile-services-text {
-        display: block;
-      }
+    //   .mobile-services-text {
+    //     display: block;
+    //   }
 
-      .service-page-testimonials {
-        display: flex;
-        background-color: $indigo;
-        color: $space_gray;
-        padding: 1rem .5rem;
-        margin: 1rem;
+    //   .service-page-testimonials {
+    //     display: flex;
+    //     background-color: $indigo;
+    //     color: $space_gray;
+    //     padding: 1rem .5rem;
+    //     margin: 1rem;
   
-          h4 {
-            margin: 0 auto;
-          }
+    //       h4 {
+    //         margin: 0 auto;
+    //       }
   
-        img {
-          border-radius: 100%;
-          margin: 0 5px;
-          height: 75px;
-          width: 75px;
-        }
+    //     img {
+    //       border-radius: 100%;
+    //       margin: 0 5px;
+    //       height: 75px;
+    //       width: 75px;
+    //     }
   
-        p {
-          width: 100%;
-          margin: 0 auto;
-        }
-      }
+    //     p {
+    //       width: 100%;
+    //       margin: 0 auto;
+    //     }
+    //   }
 
-    }
+    // }
 
   .main-carousel {
     @include desktop {
@@ -396,11 +398,12 @@ section {
     }
 
     .carousel-cell {
-      display: flex;
+      display: block;
+      width: 100%;
     }
     
     .service-page-testimonials {
-      display: flex;
+      display: block;
       background-color: $indigo;
       color: $space_gray;
       padding: 1rem;
@@ -417,7 +420,9 @@ section {
       }
     
     .carousel-img-name {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
       img {
@@ -426,38 +431,38 @@ section {
         width: 75px;
       }
 
+      h4 {
+        margin: 0;
+      }
+
       p {
         width: 100%;
         margin: 0 auto;
+        padding: 15px;
       }
     }
 }
 
-  .discover-button {
-    display: none;
-
-    @include desktop {
-      display: flex;
-      margin-top: 2rem;
-      width: 100%;
-      height: 300px;
-      background-repeat: no-repeat;
-      background-image: url('../../images/discover-image.png');
-      
-    img {
-      width: 100%;
-      height: 200px;
-      }
+.services-discover{
+  display: flex;
+  background-image: url('../../images/discover-image.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-top: 2rem;
 
     .btn {
+      max-width: 300px;
       margin: auto;
       color: $ultra_violet;
-      font-weight: 400;
+      font-weight: 600;
+      font-size: $h4_text_size;
       background-color: $space_gray;
-      }
+      padding: 1rem 0.5rem;
     }
   }
 }
+
 
 /* Contact Us Page */
 
