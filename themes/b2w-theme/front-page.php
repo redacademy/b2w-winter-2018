@@ -50,12 +50,12 @@ get_header(); ?>
 		<section class="fp-container">
 			<div class="front-page-stats-box">
 				<div class="front-page-stats">
-					<h2>1 in 5</h2>
-					<p>children live in poverty and most them are from single parent homes.</p>
+					<h2><?php echo CFS()->get( 'fp_stats' );?></h2>
+					<p><?php echo CFS()->get( 'fp_stats_text' );?></p>
 				</div>
 				<div class="front-page-stats">
-					<h2 id="value">0</h2>
-					<p>single parents accessing income assistant in BC (May 2016)</p>
+					<h2 id="value"><?php echo CFS()->get ( 'fp_stats2' ) ?></h2>
+					<p><?php echo CFS()->get ( 'fp_stats_text2' ) ?></p>
 				</div>
 			</div>
 			<div class="front-page-stats">
