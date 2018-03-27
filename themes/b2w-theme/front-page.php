@@ -27,14 +27,17 @@ get_header(); ?>
 					<div class="front-page-services-text">	
 						<img src="<?php echo get_template_directory_uri() . '/images/paid-internship.svg' ?>">
 							<h5>Paid Internship</h5>
-					</div>
+							<p><?php echo CFS()->get( 'services_paid' );?></p>
+						</div>
 					<div class="front-page-services-text">
 							<img src="<?php echo get_template_directory_uri() . '/images/temp-placement.svg' ?>">
 							<h5>Temp Placement</h5>
+							<p><?php echo CFS()->get( 'services_placement' );?></p>
 					</div>
 					<div class="front-page-services-text">
 							<img src="<?php echo get_template_directory_uri() . '/images/permanant-placement.svg' ?>">
 							<h5>Temp to Placement</h5>
+							<p><?php echo CFS()->get( 'services_permanent_placement' );?></p>
 					</div>
 				</div>
 		</section>
@@ -68,9 +71,13 @@ get_header(); ?>
 						<div class="front-page-testimonials-container">
 							<div class="front-page-testimonials">
 								<img src="<?php echo $authorPhoto?>">
+								<div class="testimonial-text">
 								<?php echo $authorText?>
-								<?php echo $authorName?>
-								<?php echo $authorPosition?>
+								<div class="testimonial-sub-text">
+									<h5><?php echo $authorName?></h5>
+									<p><?php echo $authorPosition?></p>
+								</div>
+								</div>
 							</div>
 							<?php
 						}

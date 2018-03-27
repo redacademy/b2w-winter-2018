@@ -91,11 +91,17 @@ section {
 
 .front-page-services-text {
   display: block;
-  width: 75px;
+
+  p {
+    text-align: center;
+    font-size: .75rem;
+    margin: 0 1rem 2rem 1rem;
+  }
 
   h5 {
     font-size: $h5_text_size;
     text-align: center;
+    margin: 1rem 0 0 0;
   }
 }
 
@@ -182,6 +188,27 @@ section {
       object-fit: center;
       margin: 1rem 1rem;
     }
+
+  .testimonial-text {
+    display: block;
+    height: auto;
+  }
+
+  .testimonial-sub-text {
+    display: block;
+
+    h5 {
+      width: auto;
+      margin: 1rem 0 0 0;
+      font-size: $h5_text_size;
+    }
+
+    p {
+      width: auto;
+      margin: 0;
+    }
+  }
+
   }
 }
 
