@@ -4,14 +4,12 @@
 
 .site-content {
   padding-top: 100px;
-
-
   @include desktop {
     padding-top: 50px;
   }
 }
 
-/* Front page */
+/* Front Page */
 
 .front-page-hero {
   background-image: url('../../images/heroimageb2w.jpeg');
@@ -19,38 +17,32 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 30vh;
-
-    @include desktop {
-      width: 100%;
-      height: 475px;
-    }
-
+  @include desktop {
+    width: 100%;
+    height: 475px;
+  }
   .hero-text-container {
     margin: 0 0 0 50px;
     padding-top: 10px;
-
     @include desktop {
       display: block;
     }
-
     .hero-text {
       color: $space_gray;
       width: 150px;
       font-size: 1.25rem;
       border: 0;
-
       @include desktop {
         width: auto;
         margin-top: 10rem;
         font-size: 2rem;
       }
     }
-  } 
+  }
 }
 
 .info-text-container {
   background: $space_gray;
-
   @include desktop {
     padding: 1.5rem 1rem;
   }
@@ -63,7 +55,6 @@
   text-align: center;
   font-weight: 500;
   color: $ultra_violet;
-
   @include desktop {
     width: 40%;
   }
@@ -81,7 +72,6 @@ section {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-
   img {
     margin: 0 auto;
     width: 75px;
@@ -93,38 +83,30 @@ section {
   display: flex;
   flex-flow: column;
   width: auto;
-
   p {
     display: none;
-
     @include tablet {
-    display: flex;
-    text-align: center;
-    font-size: .75rem;
-    margin: 0 1rem 2rem 1rem;
+      display: flex;
+      text-align: center;
+      font-size: 0.75rem;
+      margin: 0 1rem 2rem 1rem;
+    }
   }
-}
-
   h5 {
     font-size: $h5_text_size;
     text-align: center;
     margin: 1rem 0 2rem 0;
   }
-
   .services-sub-text {
     align-content: center;
-  
     img {
       align-content: center;
     }
   }
 }
 
-
-
 .fp-container {
   background-color: $ultra_violet;
-
   @include desktop {
     display: flex;
   }
@@ -134,45 +116,38 @@ section {
   display: flex;
   text-align: center;
   color: $space_gray;
-
   @include desktop {
     margin: 0 5rem;
   }
 }
 
 .front-page-stats {
-
   @include desktop {
     margin: 3rem;
   }
-
   h2 {
     margin: 1.5rem 0 0 0;
-
     @include desktop {
       margin: 0;
     }
   }
-
   h3 {
     width: auto;
     text-align: center;
     font-weight: 400;
     color: white;
     padding-bottom: 1rem;
-
     @include desktop {
-      font-size: $h3_text_size*.85;
+      font-size: $h3_text_size * 0.85;
       margin: 0;
     }
   }
-
   p {
     width: 70%;
     margin: 0 auto;
     color: $grape;
     font-weight: 300;
-   }
+  }
 }
 
 .h2-title-text {
@@ -186,7 +161,6 @@ section {
     width: auto;
     margin: 0 auto;
   }
-  
   .front-page-testimonials {
     display: flex;
     background-color: $indigo;
@@ -194,12 +168,10 @@ section {
     justify-content: space-around;
     margin: 2rem;
     padding: 1rem;
-
     @include desktop {
       width: 500px;
       margin: 2rem auto;
     }
-
     img {
       border-radius: 100%;
       height: 75px;
@@ -207,46 +179,37 @@ section {
       object-fit: center;
       margin: 1rem 1rem;
     }
-
-  .testimonial-text {
-    display: block;
-    height: auto;
-  }
-
-  .testimonial-sub-text {
-    display: block;
-
-    h5 {
-      width: auto;
-      margin: 1rem 0 0 0;
-      font-size: $h5_text_size;
+    .testimonial-text {
+      display: block;
+      height: auto;
     }
-
-    p {
-      width: auto;
-      margin: 0;
+    .testimonial-sub-text {
+      display: block;
+      h5 {
+        width: auto;
+        margin: 1rem 0 0 0;
+        font-size: $h5_text_size;
+      }
+      p {
+        width: auto;
+        margin: 0;
+      }
     }
-  }
-
   }
 }
 
 .testimonial-button {
   display: flex;
   align-content: center;
-
   @include desktop {
     background: $space_gray;
   }
-
   .btn {
     width: 1000px;
-
     @include desktop {
       margin: 1rem auto;
     }
   }
-
   a {
     margin: auto;
     font-size: $h4_text_size;
@@ -258,199 +221,124 @@ section {
 /* Services Page */
 
 .page-id-19 {
-  .site-main{
+  .site-main {
     width: 90%;
     margin: auto;
-    
     @include desktop {
       img {
         width: 500px;
         height: 350px;
-      };
+      }
     }
-
     .services-container-desktop {
       @include desktop {
-      display: flex;
+        display: flex;
       }
     }
-    
     .services-title-container {
-      
       @include desktop {
-      margin: 1rem 0 10rem 0;
+        margin: 1rem 0 10rem 0;
       }
     }
-
     .entry-header {
       display: none;
-
       @include tablet {
         margin: 0;
       }
-      
       @include desktop {
         margin: 0;
       }
     }
-
     .services-hide {
       display: none;
-
       @include tablet {
         display: block;
       }
-      
       @include desktop {
         display: block;
         width: 400px;
         margin: 0 10rem 0 0;
       }
     }
-
     .services-hide-desktop {
       @include tablet {
         display: none;
       }
-      
       @include desktop {
         display: none;
       }
     }
-
     .hire-temp1 {
-
       @include desktop {
-      order: 2;
-      width: 400px;
-      margin: 0 0 1rem 8rem;
+        order: 2;
+        width: 400px;
+        margin: 0 0 1rem 8rem;
+      }
     }
-  }
-
     .hire-temp2 {
-
       @include desktop {
-      order: 1;
+        order: 1;
       }
     }
   }
-
-
-    h2 {
-      margin: 0;
-      font-size: $h4_text_size;
-    }
-
-    p {
-      margin-top: 0;
-      font-size: $h5_text_size *1.2;
-      font-weight: 200;
-    }
-
-    // .desktop-services {
-    //   display: none;
-
-    //   @include desktop {
-    //     display: block;
-    //   }
-    // }
-
-    // .mobile-services {
-    //   display: block;
-
-    //   @include desktop {
-    //     display: none;
-    //   }
-
-    //   .mobile-services-text {
-    //     display: block;
-    //   }
-
-    //   .service-page-testimonials {
-    //     display: flex;
-    //     background-color: $indigo;
-    //     color: $space_gray;
-    //     padding: 1rem .5rem;
-    //     margin: 1rem;
-  
-    //       h4 {
-    //         margin: 0 auto;
-    //       }
-  
-    //     img {
-    //       border-radius: 100%;
-    //       margin: 0 5px;
-    //       height: 75px;
-    //       width: 75px;
-    //     }
-  
-    //     p {
-    //       width: 100%;
-    //       margin: 0 auto;
-    //     }
-    //   }
-
-    // }
-
+  h2 {
+    margin: 0;
+    font-size: $h4_text_size;
+  }
+  p {
+    margin-top: 0;
+    font-size: $h5_text_size * 1.2;
+    font-weight: 200;
+  }
   .main-carousel {
     @include desktop {
       display: block;
     }
-
     .carousel-cell {
       display: block;
       width: 100%;
     }
-    
     .service-page-testimonials {
       display: block;
       background-color: $indigo;
       color: $space_gray;
       padding: 1rem;
-
       @include desktop {
         display: block;
         margin: 2rem;
         width: 50%;
         line-height: 1.25;
-
         h4 {
           margin: 0;
         }
       }
-    
-    .carousel-img-name {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
+      .carousel-img-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       img {
         border-radius: 100%;
         height: 75px;
         width: 75px;
       }
-
       h4 {
         margin: 0;
       }
-
       p {
         width: 100%;
         margin: 0 auto;
         padding: 15px;
       }
     }
-}
-
-.services-discover{
-  display: flex;
-  background-image: url('../../images/discover-image.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
-  margin-top: 2rem;
-
+  }
+  .services-discover {
+    display: flex;
+    background-image: url('../../images/discover-image.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-top: 2rem;
     .btn {
       max-width: 300px;
       margin: auto;
@@ -462,121 +350,3 @@ section {
     }
   }
 }
-
-
-/* Contact Us Page */
-
-// .page-id-13 {
-
-//   article {
-//     background: $indigo;
-//     padding: 5px 0;
-
-//     h1 {
-//       display: none;
-//     }
-
-//     label {
-//       color: $space_gray;
-//       width: 90%;
-//       margin: 0 1rem;
-//     }
-
-//     input {
-//       width: 90%;
-//       margin: 0 1rem;
-//       border-radius: 0%;
-//       background-color: $space_gray;      
-//     }
-
-//     .wpcf7-submit {
-//       margin-left: 6rem;
-//       width: 175px;
-//       height: 50px;
-//       font-size: $h2_text_size;
-//       font-weight: 550;
-//       color: $ultra_violet;
-//     }
-
-//     textarea {
-//       height: 100px;
-//       width: 90%;
-//       margin: 0 1rem;
-//       background-color: $space_gray;
-//     }
-
-//     .map-container {
-//       body {
-//       display: flex;
-//       margin-left: 2rem;
-//       width: 90%;
-//       margin: 0 1rem;
-//       }
-
-//       .map {
-//         -webkit-filter: grayscale(100%);
-//            -moz-filter: grayscale(100%);
-//             -ms-filter: grayscale(100%);
-//              -o-filter: grayscale(100%);
-//                 filter: grayscale(100%);
-//       }
-//     }
-
-//     iframe {
-//       margin: 1rem;
-//       -webkit-filter: grayscale(100%);
-//       -moz-filter: grayscale(100%);
-//        -ms-filter: grayscale(100%);
-//         -o-filter: grayscale(100%);
-//            filter: grayscale(100%);
-//   }
-// }
-
-//   .contact-text-container {
-//     width: 90%;
-//     padding-bottom: 20px;
-//     margin: auto;
-
-//     .address-container {
-//       line-height: 0;
-//     }
-
-//     .phone-number-container {
-//       display: flex;
-//       line-height: 0;
-//     }
-
-//     img {
-//       width: 100px;
-//     }
-//   }
-
-//   .widget-title {
-//     margin: 1rem;
-//   }
-
-//   .office-hours-widget {
-//     display: flex;
-//     width: 90%;
-//     margin: auto;
-//   }
-
-//   .office-hours-days {
-//     font-weight: bold;
-//     margin-right: 5rem;
-
-//     p {
-//       margin: 5px;
-//     }
-//   }
-  
-//   .office-hours-hours {
-//     p {
-//       margin: 5px;
-//     }
-//   }
-// }
-
-
-
-
