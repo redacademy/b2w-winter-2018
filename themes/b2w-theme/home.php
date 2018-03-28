@@ -14,9 +14,6 @@ get_header(); ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-					<?php endif; ?>
 					<h1 class="page-title"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
