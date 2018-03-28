@@ -47,3 +47,4 @@ themes/b2w-theme/node_modules/*
 # ================== #
 themes/b2w-theme/gulpfile.js
 themes/b2w-theme/build/*
+!themes/b2w-theme/build/lib/
