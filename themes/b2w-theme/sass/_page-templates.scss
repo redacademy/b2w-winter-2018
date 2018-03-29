@@ -145,7 +145,7 @@ section {
   p {
     width: 70%;
     margin: 0 auto;
-    color: $grape;
+    color: lighten($grape, 20%);
     font-weight: 300;
   }
 }
