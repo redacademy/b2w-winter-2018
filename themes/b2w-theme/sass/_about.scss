@@ -25,16 +25,18 @@
     }
   /* What We're All About Section*/
     .what-about-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
       h2 {          
         padding: 5% 0 0 10%;
-        @include tablet {
+        @include tablet { 
           font-size: $h2_text_size;
           transition: .5s;
         }
         @include desktop {
-          padding: 5% 0 0 4%;
+          padding: 0 0 0 2%;
           font-size: $h1_text_size;
-          margin-bottom: -9%;
+          margin-bottom: -100px;
           width: 47%;
         }
        }
@@ -45,6 +47,9 @@
           justify-content: space-around;
           h3 {
             width: 50%;
+            @include desktop {
+              width: auto;
+            }
           }
           p {
             display: flex;
@@ -60,6 +65,8 @@
     .who-we-are-wrapper {
       background-color: $space_gray;
       width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
       h2 {          
         padding: 5% 0 0 10%;
         @include tablet {
@@ -129,6 +136,7 @@
         .text-wrap {
           background-color: $ultra_violet;
           width: 100vw;
+          max-width: 1200px;
           color: $space_gray;
           padding: 15px;
           transform: translateY(0);
