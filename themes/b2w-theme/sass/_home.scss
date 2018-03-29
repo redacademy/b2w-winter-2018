@@ -29,7 +29,7 @@
       height: auto;
       display: block;
     }
-    .entry-title{
+    .h1{
       margin: 0;
       &::after{
         content: "";
@@ -58,6 +58,16 @@
   }
   .author{
     font-weight: bold;
+  }
+
+  .entry-title{
+    a{
+      text-decoration: none;
+      color: $ultra_violet;
+      &:hover{
+        color: $grape;
+      }
+    }
   }
 
 }

@@ -1,17 +1,6 @@
 /* Search, 404, Archive, and  Single CSS*/
 
-//Single Post
-.single{
-  .content-area{
-    max-width: 1200px;
-    padding: 20px;
-    padding-top: 0;
-    @include tablet{
-      padding: 50px;
-      padding-top: 0;
-    }
-  }
-}
+//Generic Stylings
 
 .archive,
 .single,
@@ -23,9 +12,12 @@
     align-items: center;
   }
 
-  a{
-    display: block;
+  .content-area{
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+
   .entry-header{
     display: block;
     margin: 20px 0;
@@ -47,6 +39,27 @@
   .entry-title{
     color: $ultra_violet;
     margin: 20px 0;
+    a{
+      text-decoration: none;
+      color: $ultra_violet;
+    }
+  }
+
+  .entry-header {
+    height: auto;
+  }
+}
+
+//Single Post
+.single{
+  .content-area{
+    max-width: 1200px;
+    padding: 20px;
+    padding-top: 0;
+    @include tablet{
+      padding: 50px;
+      padding-top: 0;
+    }
   }
 
   .nav-previous{
@@ -91,8 +104,28 @@
     margin-bottom: 5%;
     }
   }
+}
 
-  .entry-header {
-    height: auto;
+//Search Page
+.search-no-results{
+  h1{
+    &::after{
+      content: "";
+      display: none;
+    }
   }
 }
+
+//404 page
+ .error404{
+   .page-content{
+     a{
+       display: block;
+       text-decoration: none;
+       color: $ultra_violet;
+       &:hover{
+         color: $grape;
+       }
+     }
+   }
+ }
