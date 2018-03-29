@@ -10,6 +10,8 @@
   color: $space_gray;
   padding: 0 15px;
   margin-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
   /* Footer logo and widget wrapper */
     .footer-logo-widget-wrapper { 
       @include tablet {

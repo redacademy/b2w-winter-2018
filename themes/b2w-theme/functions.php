@@ -106,7 +106,7 @@ function b2w_scripts() {
 	wp_enqueue_script( 'flickity-cdn',  'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), false, true  );	
 	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/build/js/carousel.min.js', array('jquery', 'flickity-cdn'), false, true );
 
-	wp_enqueue_script('count-up-js', get_template_directory_uri() . '/build/js/countUp.min.js', array(), '23',true); 
+	wp_enqueue_script('count-up-js', get_template_directory_uri() . '/build/js/countUp.min.js', array(), false ,true); 
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
