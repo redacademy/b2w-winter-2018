@@ -15,20 +15,21 @@
     .entry-header{
       height: auto;
       .entry-title{
+        margin: 0 20px;
         @include desktop{
           margin: 0;
         }
       }
     }
 
-    h1{
-      color: black;
-      margin: 0 20px;
-      font-weight: bold;
-      @include desktop{
-        margin: 0 50px;
-      }
-    }
+    // h1{
+    //   color: black;
+    //   margin: 0 20px;
+    //   font-weight: bold;
+    //   @include desktop{
+    //     margin: 0 50px;
+    //   }
+    // }
 
     .entry-content{
       padding: 0;
