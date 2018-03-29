@@ -233,6 +233,8 @@ section {
     .services-container-desktop {
       @include desktop {
         display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
       }
     }
     .services-title-container {
