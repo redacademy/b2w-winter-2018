@@ -169,6 +169,9 @@
 		}
 		.btn-plain{
 			box-shadow: none;
+			&:hover{
+				color: white;
+			}
 		}
 		h2{
 		}
